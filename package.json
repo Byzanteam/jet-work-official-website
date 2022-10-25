@@ -11,6 +11,8 @@
     "lint:fix": "eslint --ext .json,.js,.vue --fix src"
   },
   "dependencies": {
+    "i18next": "^22.0.2",
+    "lodash-es": "^4.17.21",
     "vue": "^3.2.37"
   },
   "devDependencies": {
