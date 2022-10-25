@@ -3,10 +3,10 @@
  *   0: '0px',
  *   1: '1px',
  *   ...
- *   200: '200px',
+ *   400: '400px',
  * }
  */
-const numberSpacings = Array.from({ length: 201 }).reduce((acc, _, index) => {
+const numberSpacings = Array.from({ length: 401 }).reduce((acc, _, index) => {
   acc[`${index}`] = `${index}px`
   return acc
 }, {})
