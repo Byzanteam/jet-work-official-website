@@ -1,5 +1,5 @@
 <template>
-  <div>Byzantem 官网</div>
+  <div class="text-gray-900 text-xs">Byzantem 官网</div>
 </template>
 
 <script setup>
