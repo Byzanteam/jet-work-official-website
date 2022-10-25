@@ -2,7 +2,7 @@
   <HomeHeader />
   <div class="overflow-scroll bg-black min-h-screen flex flex-col">
     <div class="flex-grow"></div>
-    <HomeFooter class="flex-shrink-0" />
+    <HomeFooter />
   </div>
 </template>
 
