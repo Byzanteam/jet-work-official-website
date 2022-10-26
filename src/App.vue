@@ -1,5 +1,7 @@
 <template>
-  <div class="text-gray-900 text-xs">{{ $t('common.official_website') }}</div>
+  <HomePage />
 </template>
 
-<script setup></script>
+<script setup>
+import { HomePage } from './components'
+</script>

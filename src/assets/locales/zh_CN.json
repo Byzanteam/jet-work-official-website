@@ -1,5 +1,8 @@
 {
- "common": {
-  "official_website": "Byzantem 官网"
+ "page": {
+    "home": {
+      "address": "中国四川省成都市武侯区航空路 6 号",
+      "copyright": "© 2022 Jet"
+    }
   }
 }
