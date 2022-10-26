@@ -23,8 +23,9 @@ export default {
 </script>
 
 <script setup>
-import FeatureCard from './feature.vue'
-import SectionTitle from './title.vue'
+import SectionTitle from '../_title.vue'
+
+import FeatureCard from './_feature.vue'
 
 const cardsData = [
   {

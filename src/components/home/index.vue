@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-black min-h-screen flex flex-col">
+  <div class="bg-black min-h-screen w-screen flex flex-col items-stretch">
     <HomeHeader />
-    <div class="flex-grow">
-      <HomeBanner />
+    <main class="flex-grow">
+      <SloganSection />
       <FeaturesSection />
-    </div>
+    </main>
     <HomeFooter />
   </div>
 </template>
@@ -17,8 +17,8 @@ export default {
 </script>
 
 <script setup>
-import HomeBanner from './banner.vue'
+import FeaturesSection from './features/index.vue'
 import HomeFooter from './footer.vue'
 import HomeHeader from './header.vue'
-import FeaturesSection from './section/features.vue'
+import SloganSection from './slogan.vue'
 </script>
