@@ -5,7 +5,7 @@
     <div class="w-543 h-543 text-white bg-gradient-aperture bg-contain">
       <h1 class="text-brand-bule mt-89">{{ $t('page.home.build') }}</h1>
       <h1>{{ $t('page.home.as_you_width') }}</h1>
-      <p class="mt-16 mb-56 opacity-65 text-2xl leading-34">
+      <p class="mt-16 mb-56 text-2xl leading-34 text-gray-65">
         {{ $t('page.home.build.description') }}
       </p>
       <button

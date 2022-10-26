@@ -17,9 +17,12 @@ module.exports = {
     extend: {
       colors: {
         gray: {
-          1: 'rgba(255, 255, 255, 0.8)',
-          2: 'rgba(255, 255, 255, 0.2)',
-          3: 'rgba(255, 255, 255, 0.08)',
+          '08': 'rgba(255, 255, 255, 0.08)',
+          10: 'rgba(255, 255, 255, 0.1)',
+          20: 'rgba(255, 255, 255, 0.2)',
+          50: 'rgba(255, 255, 255, 0.5)',
+          65: 'rgba(255, 255, 255, 0.65)',
+          80: 'rgba(255, 255, 255, 0.8)',
         },
         'brand-bule': '#115EF5',
       },
@@ -27,9 +30,29 @@ module.exports = {
         ...numberSpacings,
         auto: 'auto',
       },
+      fontSize: {
+        '3xl': [
+          '32px',
+          {
+            lineHeight: '45px',
+          },
+        ],
+        '4xl': [
+          '40px',
+          {
+            lineHeight: '56px',
+          },
+        ],
+        '7xl': [
+          '72px',
+          {
+            lineHeight: '86px',
+          },
+        ],
+      },
       lineHeight: {
+        22: '22px',
         34: '34px',
-        86: '86px',
       },
       opacity: {
         65: '.65',
