@@ -3,10 +3,10 @@
  *   0: '0px',
  *   1: '1px',
  *   ...
- *   400: '400px',
+ *   800: '400px',
  * }
  */
-const numberSpacings = Array.from({ length: 401 }).reduce((acc, _, index) => {
+const numberSpacings = Array.from({ length: 801 }).reduce((acc, _, index) => {
   acc[`${index}`] = `${index}px`
   return acc
 }, {})
@@ -26,6 +26,16 @@ module.exports = {
       spacing: {
         ...numberSpacings,
         auto: 'auto',
+      },
+      lineHeight: {
+        34: '34px',
+        86: '86px',
+      },
+      opacity: {
+        65: '.65',
+      },
+      backgroundImage: {
+        'gradient-aperture': "url('/images/bg_gradient.png')",
       },
     },
   },

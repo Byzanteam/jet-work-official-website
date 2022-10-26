@@ -1,6 +1,12 @@
 {
  "page": {
     "home": {
+      "build": {
+        "__t__": "构建，",
+        "description": "让你更灵活的，更高定制化的完成应用构建"
+      },
+      "as_you_width": "如你所愿",
+      "contact": "联系我们",
       "address": "中国四川省成都市武侯区航空路 6 号",
       "copyright": "© 2022 Jet"
     }

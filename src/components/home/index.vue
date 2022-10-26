@@ -1,7 +1,9 @@
 <template>
   <div class="bg-black min-h-screen flex flex-col">
     <HomeHeader />
-    <div class="flex-grow"></div>
+    <div class="flex-grow">
+      <HomeBanner />
+    </div>
     <HomeFooter />
   </div>
 </template>
@@ -14,6 +16,7 @@ export default {
 </script>
 
 <script setup>
+import HomeBanner from './banner.vue'
 import HomeFooter from './footer.vue'
 import HomeHeader from './header.vue'
 </script>
