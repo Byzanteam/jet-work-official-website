@@ -1,6 +1,6 @@
 <template>
-  <HomeHeader />
-  <div class="overflow-scroll bg-black min-h-screen flex flex-col">
+  <div class="bg-black min-h-screen flex flex-col">
+    <HomeHeader />
     <div class="flex-grow"></div>
     <HomeFooter />
   </div>
