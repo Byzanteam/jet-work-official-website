@@ -7,3 +7,14 @@
     @apply text-7xl leading-[86px] font-semibold;
   }
 }
+
+@layer components {
+  .content-container {
+    @apply max-w-[1320px] m-auto px-5 md:px-10 xl:px-[3.75rem]
+  }
+
+  .feature-card {
+    background-image: linear-gradient(to right, #115ef5, #538bf9);
+    border-radius: 22px;
+  }
+}

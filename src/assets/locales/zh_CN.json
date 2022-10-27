@@ -9,7 +9,22 @@
       "contact_us": "联系我们",
       "features": {
         "__t__": "产品特点",
-        "description": "用数据表示业务的状态，业务的状态在一定的规则驱动下进行流转进而改变业务的状态，数据规则的本质也是数据"
+        "description": "用数据表示业务的状态，业务的状态在一定的规则驱动下进行流转进而改变业务的状态，数据规则的本质也是数据",
+        "application": {
+          "title": "Company's website",
+          "summary": "像搭积木一样简单",
+          "description": "你只需要填充相应文案，选择图片，即可生成；通过模版快速生成"
+        },
+        "saas": {
+          "title": "SaaS",
+          "summary": "应用的更进一步",
+          "description": "收集数据、让数据流动，做一个专属于公司的数据工具"
+        },
+        "platform": {
+          "title": "Platform website",
+          "summary": "打通企业内部信息孤岛",
+          "description": "自动化整个过程并解决来自任何数据源、系统或服务的数据和逻辑集成以使其全部工作"
+        }
       },
       "address": "中国四川省成都市武侯区航空路 6 号",
       "copyright": "© 2022 成都了了科技有限公司"
