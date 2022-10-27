@@ -1,11 +1,11 @@
 <template>
   <div class="w-full">
     <div
-      class="max-w-[1200px] m-auto py-10 px-20 flex lg:flex-row flex-col-reverse"
+      class="max-w-[1320px] m-auto py-10 px-20 flex md:flex-row flex-col-reverse"
     >
       <!-- slogan container -->
       <div
-        class="lg:basis-[560px] lg:grow-[7] lg:shrink text-white bg-gradient-aperture bg-contain bg-no-repeat"
+        class="md:basis-[560px] md:grow-[7] md:shrink text-white bg-gradient-aperture bg-contain bg-no-repeat"
       >
         <h1 class="text-brand-bule mt-[89px]">{{ $t('page.home.build') }}</h1>
         <h1>{{ $t('page.home.as_you_width') }}</h1>
@@ -19,7 +19,7 @@
         </button>
       </div>
       <!-- image container -->
-      <div class="lg:basis-[400px] lg:grow-[5] lg:shrink-[10]">
+      <div class="md:basis-[400px] md:grow-[5] md:shrink-[10]">
         <img src="/images/slogan_image.png" alt="slogan image" />
       </div>
     </div>
