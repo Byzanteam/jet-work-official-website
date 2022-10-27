@@ -6,6 +6,7 @@
       {{ title }}
     </h2>
     <p
+      v-if="description"
       class="w-full md:text-base md:leading-[22px] xl:max-w-[588px] text-sm max-w-[450px] mt-2 text-gray-80"
     >
       {{ description }}
@@ -28,7 +29,7 @@ defineProps({
   },
   description: {
     type: String,
-    required: true,
+    default: '',
   },
 })
 </script>
