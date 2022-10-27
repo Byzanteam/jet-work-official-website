@@ -3,7 +3,6 @@
     <HomeHeader />
     <main class="flex-grow">
       <SloganSection />
-      <FeaturesSection />
     </main>
     <HomeFooter />
   </div>
@@ -17,7 +16,6 @@ export default {
 </script>
 
 <script setup>
-import FeaturesSection from './features/index.vue'
 import HomeFooter from './footer.vue'
 import HomeHeader from './header.vue'
 import SloganSection from './slogan.vue'

@@ -1,16 +1,3 @@
-/**
- * numberSpacings = {
- *   0: '0px',
- *   1: '1px',
- *   ...
- *   800: '400px',
- * }
- */
-const numberSpacings = Array.from({ length: 801 }).reduce((acc, _, index) => {
-  acc[`${index}`] = `${index}px`
-  return acc
-}, {})
-
 module.exports = {
   content: ['./index.html', './src/**/*.{vue,js}'],
   theme: {
@@ -26,39 +13,11 @@ module.exports = {
         },
         'brand-bule': '#115EF5',
       },
-      spacing: {
-        ...numberSpacings,
-        auto: 'auto',
-      },
-      fontSize: {
-        '3xl': [
-          '32px',
-          {
-            lineHeight: '45px',
-          },
-        ],
-        '4xl': [
-          '40px',
-          {
-            lineHeight: '56px',
-          },
-        ],
-        '7xl': [
-          '72px',
-          {
-            lineHeight: '86px',
-          },
-        ],
-      },
-      lineHeight: {
-        22: '22px',
-        34: '34px',
-      },
-      opacity: {
-        65: '.65',
-      },
       backgroundImage: {
         'gradient-aperture': "url('/images/bg_gradient.png')",
+      },
+      screens: {
+        xl: '1320px',
       },
     },
   },

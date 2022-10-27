@@ -1,16 +1,22 @@
 <template>
-  <footer class="bg-gray-08 opacity-8 w-full flex items-center px-360 py-56">
-    <div class="flex items-center justify-between px-24 py-10 w-full">
-      <div class="flex items-center">
-        <div class="w-60 h-60">
-          <img src="/images/logo_jet-02.png" alt="logo" />
+  <footer class="bg-gray-08">
+    <div class="max-w-[1200px] m-auto py-14 px-5 md:px-10 xl:px-[60px]">
+      <div
+        class="flex flex-col xl:flex-row items-center justify-between py-2.5"
+      >
+        <div class="flex items-center">
+          <div class="w-[60px] h-[60px]">
+            <img src="/images/logo_jet-02.png" alt="logo" />
+          </div>
+          <div class="text-gray-50 w-[186px] ml-4 leading-snug text-base">
+            {{ $t('page.home.address') }}
+          </div>
         </div>
-        <div class="text-white opacity-50 w-186 ml-16 leading-snug">
-          {{ $t('page.home.address') }}
+        <div
+          class="text-gray-50 whitespace-nowrap xl:mt-0 mt-12 text-xs font-medium"
+        >
+          {{ $t('page.home.copyright') }}
         </div>
-      </div>
-      <div class="text-white opacity-50 whitespace-nowrap font-medium">
-        {{ $t('page.home.copyright') }}
       </div>
     </div>
   </footer>
