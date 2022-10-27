@@ -4,6 +4,7 @@
     <main class="flex-grow">
       <SloganSection />
       <FeatureSection />
+      <BenefitsSection />
     </main>
     <HomeFooter />
   </div>
@@ -17,6 +18,7 @@ export default {
 </script>
 
 <script setup>
+import BenefitsSection from './benefits/index.vue'
 import FeatureSection from './features/index.vue'
 import HomeFooter from './footer.vue'
 import HomeHeader from './header.vue'
