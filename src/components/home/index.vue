@@ -5,6 +5,7 @@
       <SloganSection />
       <FeatureSection />
       <BenefitsSection />
+      <WorkWaySection />
     </main>
     <HomeFooter />
   </div>
@@ -23,4 +24,5 @@ import FeatureSection from './features/index.vue'
 import HomeFooter from './footer.vue'
 import HomeHeader from './header.vue'
 import SloganSection from './slogan.vue'
+import WorkWaySection from './work-way/index.vue'
 </script>
