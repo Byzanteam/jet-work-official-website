@@ -1,6 +1,6 @@
 <template>
   <div class="w-full py-16">
-    <div class="max-w-[1320px] m-auto px-5 md:px-10 xl:px-[3.75rem]">
+    <div class="content-container">
       <SectionTitle
         :title="$t('page.home.features')"
         :description="$t('page.home.features.description')"

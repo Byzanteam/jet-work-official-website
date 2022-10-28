@@ -1,8 +1,6 @@
 <template>
   <footer class="bg-gray-08">
-    <div
-      class="max-w-[1320px] m-auto py-10 xl:py-14 px-5 md:px-10 xl:px-[60px]"
-    >
+    <div class="py-10 xl:py-14 content-container">
       <div
         class="flex flex-col xl:flex-row items-center justify-between py-2.5"
       >
