@@ -1,6 +1,6 @@
 <template>
-  <div class="xl:grow-[7] grow-[5] basis-0 feature-card">
-    <div class="px-6 py-4">
+  <div class="xl:grow-[5] grow-[7] basis-0 feature-card">
+    <div class="p-8">
       <img class="w-full" :src="`/images/${image}`" alt="feature-image" />
     </div>
   </div>
