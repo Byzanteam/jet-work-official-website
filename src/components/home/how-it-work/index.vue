@@ -1,19 +1,17 @@
 <template>
-  <div class="bg-work-point pt-6 content-container h-screen flex flex-col">
-    <div class="flex-shrink-0">
-      <SectionTitle
-        :title="$t('page.home.how_it_work')"
-        :description="$t('page.home.how_it_work.description')"
-      />
-    </div>
-    <div class="bg-gradient-aperture flex-grow bg-center">
-      <div class="flex justify-center mt-8 flex-shrink-0">
+  <div class="bg-work-point xl:py-[120px] py-16 content-container">
+    <SectionTitle
+      :title="$t('page.home.how_it_work')"
+      :description="$t('page.home.how_it_work.description')"
+    />
+    <div class="bg-gradient-aperture bg-center">
+      <div class="flex justify-center mt-8">
         <ProgressBar
           :length="progressBarLength"
           :hilight-number="hilightNumber"
         />
       </div>
-      <div class="flex items-center h-full">
+      <div class="flex items-center md:pt-[104px] pt-12 pb-6">
         <div class="overflow-scroll" @scroll="handleScroll">
           <img
             src="/images/how_it_work.png"

@@ -19,6 +19,6 @@
   }
 
   .radial-gradient {
-    background-image: radial-gradient(50% 50%, rgba(17, 94, 245, 0.2) 0%, transparent 100%);
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(17, 94, 245, 0.2) 0%, transparent 100%);
   }
 }
