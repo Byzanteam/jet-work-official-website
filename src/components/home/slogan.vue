@@ -1,8 +1,6 @@
 <template>
   <div class="w-full">
-    <div
-      class="max-w-[1320px] m-auto py-10 px-20 flex md:flex-row flex-col-reverse"
-    >
+    <div class="py-10 flex md:flex-row flex-col-reverse content-container">
       <!-- slogan container -->
       <div
         class="md:basis-[560px] md:grow-[7] md:shrink text-white bg-gradient-aperture bg-contain bg-no-repeat"
