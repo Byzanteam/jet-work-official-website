@@ -2,8 +2,8 @@
   <div class="bg-work-point pt-6 content-container h-screen flex flex-col">
     <div class="flex-shrink-0">
       <SectionTitle
-        :title="$t('page.home.work_way')"
-        :description="$t('page.home.work_way.description')"
+        :title="$t('page.home.how_it_work')"
+        :description="$t('page.home.how_it_work.description')"
       />
     </div>
     <div class="bg-gradient-aperture flex-grow bg-center">
@@ -15,7 +15,11 @@
       </div>
       <div class="flex items-center h-full">
         <div class="overflow-scroll" @scroll="handleScroll">
-          <img src="/images/work_way.png" alt="work-way" class="max-w-none" />
+          <img
+            src="/images/how_it_work.png"
+            alt="work-way"
+            class="max-w-none"
+          />
         </div>
       </div>
     </div>
@@ -24,7 +28,7 @@
 
 <script>
 export default {
-  name: 'WorkWaySection',
+  name: 'HowItWorkSection',
 }
 </script>
 
