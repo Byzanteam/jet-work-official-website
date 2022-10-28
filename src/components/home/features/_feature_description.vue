@@ -1,23 +1,30 @@
 <template>
-  <div class="md:py-0 py-9 px-4 xl:px-12">
-    <div class="p-1">
-      <img
-        class="w-12 h-12"
-        src="/images/features_icon.png"
-        alt="feature-icon"
-      />
-    </div>
-    <div class="xl:mt-10 mt-4 w-full">
-      <div class="text-brand-bule font-medium text-lg leading-[22px]">
-        {{ props.title }}
+  <div class="grow-[7] basis-0 flex flex-col justify-center relative">
+    <div class="md:py-0 py-9 px-4 xl:px-16">
+      <div class="p-1">
+        <img
+          class="w-12 h-12"
+          :src="`/images/${props.icon}`"
+          alt="feature-icon"
+        />
       </div>
-      <h3 class="text-white font-semibold text-2xl mt-2 mb-4">
-        {{ props.summary }}
-      </h3>
-      <p class="text-gray-80 text-base leading-[22px]">
-        {{ props.description }}
-      </p>
+      <div class="xl:mt-10 mt-4 w-full">
+        <div
+          class="text-brand-bule font-medium md:text-lg md:leading-[21px] text-base leading-[19px]"
+        >
+          {{ props.title }}
+        </div>
+        <h3
+          class="text-white font-semibold md:text-[32px] md:leading-[45px] mt-2 mb-4 text-2xl leading-[34px]"
+        >
+          {{ props.summary }}
+        </h3>
+        <p class="text-gray-80 md:text-base md:leading-[22px] text-sm">
+          {{ props.description }}
+        </p>
+      </div>
     </div>
+    <slot />
   </div>
 </template>
 
@@ -38,6 +45,10 @@ const props = defineProps({
     required: true,
   },
   description: {
+    type: String,
+    required: true,
+  },
+  icon: {
     type: String,
     required: true,
   },

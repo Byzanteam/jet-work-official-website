@@ -1,18 +1,18 @@
 <template>
   <div class="flex flex-col md:flex-row-reverse gap-6 items-stretch">
     <FeatureCard image="saas_feature.svg" />
-    <div class="grow-[5] basis-0 flex flex-col justify-center relative">
-      <FeatureDescription
-        :title="$t('page.home.features.saas.title')"
-        :summary="$t('page.home.features.saas.summary')"
-        :description="$t('page.home.features.saas.description')"
-      />
+    <FeatureDescription
+      :title="$t('page.home.features.saas.title')"
+      :summary="$t('page.home.features.saas.summary')"
+      :description="$t('page.home.features.saas.description')"
+      icon="saas_icon.png"
+    >
       <div
-        class="absolute top-full transform -translate-y-1/4 right-0 md:w-14 w-10"
+        class="absolute top-full transform xl:-translate-y-1/4 -translate-y-1/4 md:translate-y-[6px] xl:right-[194px] right-0 md:w-14 w-10"
       >
         <img src="/images/saas_arrow.svg" class="w-full" />
       </div>
-    </div>
+    </FeatureDescription>
   </div>
 </template>
 

@@ -1,18 +1,18 @@
 <template>
   <div class="flex flex-col md:flex-row gap-6 items-stretch">
     <FeatureCard image="application_feature.svg" />
-    <div class="grow-[5] basis-0 flex flex-col justify-center relative">
-      <FeatureDescription
-        :title="$t('page.home.features.application.title')"
-        :summary="$t('page.home.features.application.summary')"
-        :description="$t('page.home.features.application.description')"
-      />
+    <FeatureDescription
+      :title="$t('page.home.features.application.title')"
+      :summary="$t('page.home.features.application.summary')"
+      :description="$t('page.home.features.application.description')"
+      icon="application_icon.png"
+    >
       <div
-        class="absolute top-full transform -translate-y-1/4 md:left-0 right-0 md:w-20 w-[3.75rem]"
+        class="absolute top-full transform xl:-translate-y-1/4 xl:left-[90px] -translate-y-1/4 md:translate-y-[6px] md:left-0 right-0 xl:w-20 w-[3.75rem]"
       >
         <img src="/images/application_arrow.svg" class="w-full" />
       </div>
-    </div>
+    </FeatureDescription>
   </div>
 </template>
 
