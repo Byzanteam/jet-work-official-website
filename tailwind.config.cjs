@@ -15,6 +15,7 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-aperture': "url('/images/bg_gradient.png')",
+        'work-point': "url('/images/work_bg_point.png')",
       },
       screens: {
         xl: '1320px',

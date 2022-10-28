@@ -6,7 +6,7 @@
       >
         <div class="w-[110px]">
           <img
-            src="/images/logo_jet.png"
+            src="/images/logo_jet.svg"
             alt="logo"
             class="w-full object-cover"
           />
