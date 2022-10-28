@@ -1,7 +1,7 @@
 <template>
-  <header class="h-88 bg-black sticky top-0 w-full flex items-center">
-    <div class="ml-360 w-88 h-32">
-      <img src="/images/logo_jet-01.png" alt="logo_width_text" />
+  <header class="w-full sticky top-0 bg-black">
+    <div class="max-w-[1320px] m-auto py-7 px-5 md:px-10 xl:px-[60px]">
+      <img src="/images/logo_jet.png" alt="logo_width_text" />
     </div>
   </header>
 </template>
