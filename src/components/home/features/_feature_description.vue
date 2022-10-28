@@ -1,5 +1,5 @@
 <template>
-  <div class="grow-[7] basis-0 flex flex-col justify-center relative">
+  <div class="md:grow-[7] md:basis-0 flex flex-col justify-center relative">
     <div class="md:py-0 py-9 px-4 xl:px-16">
       <div class="p-1">
         <img
