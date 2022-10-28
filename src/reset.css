@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply text-7xl leading-[86px] font-semibold;
+    @apply md:text-7xl text-[56px] md:leading-[1.2em] leading-[1.2em] font-semibold;
   }
 }
 
@@ -16,5 +16,9 @@
   .feature-card {
     background-image: linear-gradient(to right, #115ef5, #538bf9);
     border-radius: 22px;
+  }
+
+  .radial-gradient {
+    background-image: radial-gradient(50% 50%, rgba(17, 94, 245, 0.2) 0%, transparent 100%);
   }
 }

@@ -14,7 +14,6 @@ module.exports = {
         'brand-bule': '#115EF5',
       },
       backgroundImage: {
-        'gradient-aperture': "url('/images/bg_gradient.png')",
         'work-point': "url('/images/work_bg_point.png')",
       },
       screens: {
