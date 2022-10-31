@@ -13,6 +13,7 @@
   "dependencies": {
     "i18next": "^22.0.2",
     "lodash-es": "^4.17.21",
+    "tailwind-scrollbar": "^2.0.1",
     "vue": "^3.2.37"
   },
   "devDependencies": {

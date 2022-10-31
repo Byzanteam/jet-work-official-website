@@ -4,22 +4,21 @@
       :title="$t('page.home.how_it_work')"
       :description="$t('page.home.how_it_work.description')"
     />
-    <div class="bg-gradient-aperture bg-center">
-      <div class="flex justify-center mt-8">
-        <ProgressBar
-          :length="progressBarLength"
-          :hilight-number="hilightNumber"
-        />
-      </div>
-      <div class="flex items-center md:pt-[104px] pt-12 pb-6">
-        <div class="overflow-scroll" @scroll="handleScroll">
-          <img
-            src="/images/how_it_work.png"
-            alt="work-way"
-            class="max-w-none"
-          />
-        </div>
-      </div>
+    <div class="flex justify-center mt-8">
+      <ProgressBar
+        :length="progressBarLength"
+        :hilight-number="hilightNumber"
+      />
+    </div>
+    <div
+      class="overflow-x-scroll py-[122px] md:mt-[104px] my-6 scrollbar scrollbar-thumb-gray-80 scrollbar-track-gray-10 scrollbar-thumb-rounded-[5px]"
+      @scroll="handleScroll"
+    >
+      <img
+        src="/images/how_it_work.png"
+        alt="work-way"
+        class="max-w-none h-[260px]"
+      />
     </div>
   </div>
 </template>
