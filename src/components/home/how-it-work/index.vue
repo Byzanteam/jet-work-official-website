@@ -12,16 +12,16 @@
     </div>
     <div class="relative md:mt-[104px] my-6">
       <div
-        class="absolute radial-gradient w-[543px] h-[543px] transform -translate-x-1/4 -translate-y-9 z-0"
-      />
-      <div
         class="absolute mask-linear-gradient-reverse w-[15%] h-[308px] left-0 top-[98px]"
       />
       <div
         class="absolute mask-linear-gradient w-[15%] h-[308px] right-0 top-[98px]"
       />
       <div
-        class="overflow-x-scroll py-[122px] scrollbar scrollbar-thumb-gray-80 scrollbar-track-gray-10 scrollbar-thumb-rounded-[3px]"
+        class="absolute radial-gradient w-[543px] h-[543px] transform -translate-x-10 -translate-y-9 z-0"
+      />
+      <div
+        class="overflow-x-scroll pl-[25%] md:pl-[40%] py-[122px] scrollbar scrollbar-thumb-gray-80 scrollbar-track-gray-10 scrollbar-thumb-rounded-[3px]"
         @scroll="handleScroll"
       >
         <img
