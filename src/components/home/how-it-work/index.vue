@@ -10,15 +10,26 @@
         :hilight-number="hilightNumber"
       />
     </div>
-    <div
-      class="overflow-x-scroll py-[122px] md:mt-[104px] my-6 scrollbar scrollbar-thumb-gray-80 scrollbar-track-gray-10 scrollbar-thumb-rounded-[5px]"
-      @scroll="handleScroll"
-    >
-      <img
-        src="/images/how_it_work.png"
-        alt="work-way"
-        class="max-w-none h-[260px]"
+    <div class="relative md:mt-[104px] my-6">
+      <div
+        class="absolute radial-gradient w-[543px] h-[543px] transform -translate-x-1/4 -translate-y-9 z-0"
       />
+      <div
+        class="absolute mask-linear-gradient-reverse w-[15%] h-[308px] left-0 top-[98px]"
+      />
+      <div
+        class="absolute mask-linear-gradient w-[15%] h-[308px] right-0 top-[98px]"
+      />
+      <div
+        class="overflow-x-scroll py-[122px] scrollbar scrollbar-thumb-gray-80 scrollbar-track-gray-10 scrollbar-thumb-rounded-[3px]"
+        @scroll="handleScroll"
+      >
+        <img
+          src="/images/how_it_work.png"
+          alt="work-way"
+          class="max-w-none h-[260px]"
+        />
+      </div>
     </div>
   </div>
 </template>

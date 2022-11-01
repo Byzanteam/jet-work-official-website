@@ -34,4 +34,12 @@ body {
   .radial-gradient {
     background-image: radial-gradient(50% 50% at 50% 50%, rgba(17, 94, 245, 0.2) 0%, transparent 100%);
   }
+
+  .mask-linear-gradient {
+    background: linear-gradient(269.7deg, #000000 0.22%, rgba(0, 0, 0, 0) 99.7%);
+  }
+
+  .mask-linear-gradient-reverse {
+    background: linear-gradient(89.7deg, #000000 0.22%, rgba(0, 0, 0, 0) 99.7%);
+  }
 }
