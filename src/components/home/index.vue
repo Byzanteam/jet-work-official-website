@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col items-stretch">
+  <div class="min-h-screen flex flex-col items-stretch overflow-x-hidden">
     <HomeHeader />
     <main class="flex-grow">
       <SloganSection />
