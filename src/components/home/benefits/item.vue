@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="h-60 bg-gray-10 rounded-2xl flex items-center justify-center">
-      <img :src="`images/${image}`" alt="benefit-image" />
+      <img :src="useThemeImgUrl(image)" alt="benefit-image" />
     </div>
     <div class="px-5 pt-4 md:pb-0.5 xl:pb-[30px]">
       <h4 class="mb-2 md:mb-3 text-xl md:text-2xl md:leading-[34px]">
@@ -21,6 +21,7 @@ export default {
 </script>
 
 <script setup>
+import { useThemeImgUrl } from '../../hooks'
 defineProps({
   image: {
     type: String,
