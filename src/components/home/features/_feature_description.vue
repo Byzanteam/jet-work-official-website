@@ -10,12 +10,12 @@
       </div>
       <div class="xl:mt-10 mt-4 w-full">
         <div
-          class="text-brand-bule font-medium md:text-lg md:leading-[21px] text-base leading-[19px]"
+          class="text-brand-blue font-medium md:text-lg md:leading-[21px] text-base leading-[19px]"
         >
           {{ props.title }}
         </div>
         <h3
-          class="text-white font-semibold md:text-[32px] md:leading-[45px] mt-2 mb-4 text-2xl leading-[34px]"
+          class="font-semibold md:text-[32px] md:leading-[45px] mt-2 mb-4 text-2xl leading-[34px]"
         >
           {{ props.summary }}
         </h3>

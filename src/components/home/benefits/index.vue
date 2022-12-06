@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-08">
+  <div class="bg-gray-03 dark:bg-gray-08">
     <div class="py-14 md:py-20 content-container">
       <SectionTitle :title="$t('page.home.benefits')" />
       <div class="mt-12 md:mt-[104px]">

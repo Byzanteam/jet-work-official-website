@@ -3,7 +3,7 @@
     <li
       v-for="item in length"
       :key="item"
-      :class="item <= hilightNumber ? 'bg-brand-bule' : 'bg-gray-20'"
+      :class="item <= hilightNumber ? 'bg-brand-blue' : 'bg-gray-20'"
       class="h-1 rounded-xl flex-grow"
     />
   </ul>

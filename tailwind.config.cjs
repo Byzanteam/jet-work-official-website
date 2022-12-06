@@ -4,14 +4,16 @@ module.exports = {
     extend: {
       colors: {
         gray: {
-          '08': 'rgba(255, 255, 255, 0.08)',
-          10: 'rgba(255, 255, 255, 0.1)',
-          20: 'rgba(255, 255, 255, 0.2)',
-          50: 'rgba(255, 255, 255, 0.5)',
-          65: 'rgba(255, 255, 255, 0.65)',
-          80: 'rgba(255, 255, 255, 0.8)',
+          '03': 'rgba(0, 0, 0, 0.03)',
+          '08': 'var(--tw-gray-08)',
+          10: 'var(--tw-gray-10)',
+          20: 'var(--tw-gray-20)',
+          50: 'var(--tw-gray-50)',
+          60: 'var(--tw-gray-60)',
+          80: 'var(--tw-gray-80)',
         },
-        'brand-bule': '#115EF5',
+        'black-1': '#111',
+        'brand-blue': '#115EF5',
       },
       backgroundImage: {
         'work-point': "url('/images/work_bg_point.png')",
