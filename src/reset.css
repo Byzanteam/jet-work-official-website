@@ -61,10 +61,18 @@
   }
 
   .mask-linear-gradient {
-    background: linear-gradient(269.7deg, #000000 0.22%, rgba(0, 0, 0, 0) 99.7%);
+    background: linear-gradient(269.7deg, theme('colors.white') 0.22%, rgba(0, 0, 0, 0) 99.7%);
   }
 
   .mask-linear-gradient-reverse {
-    background: linear-gradient(89.7deg, #000000 0.22%, rgba(0, 0, 0, 0) 99.7%);
+    background: linear-gradient(89.7deg, theme('colors.white') 0.22%, rgba(0, 0, 0, 0) 99.7%);
+  }
+
+  .mask-linear-gradient--dark {
+    background: linear-gradient(269.7deg, theme('colors.black') 0.22%, rgba(0, 0, 0, 0) 99.7%);
+  }
+
+  .mask-linear-gradient-reverse--dark {
+    background: linear-gradient(89.7deg, theme('colors.black') 0.22%, rgba(0, 0, 0, 0) 99.7%);
   }
 }

@@ -4,7 +4,7 @@ module.exports = {
     extend: {
       colors: {
         gray: {
-          '03': 'rgba(255, 255, 255, 0.03)',
+          '03': 'rgba(0, 0, 0, 0.03)',
           '08': 'var(--tw-gray-08)',
           10: 'var(--tw-gray-10)',
           20: 'var(--tw-gray-20)',

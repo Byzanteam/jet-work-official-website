@@ -21,7 +21,7 @@
           <a
             href="mailto:hi@jet.work"
             target="_blank"
-            class="px-[35px] py-4 border-brand-blue border-solid border rounded-lg hover:bg-brand-blue active:bg-brand-blue focus:bg-transparent text-lg leading-6 font-semibold"
+            class="px-[35px] py-4 text-brand-blue border-brand-blue border-solid border rounded-lg hover:bg-brand-blue hover:text-white active:bg-brand-blue active:text-white dark:text-white focus:bg-transparent text-lg leading-6 font-semibold"
           >
             {{ $t('page.home.contact_us') }}
           </a>
