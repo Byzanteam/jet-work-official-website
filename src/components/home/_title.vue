@@ -1,8 +1,6 @@
 <template>
   <div class="text-center flex flex-col items-center">
-    <h2
-      class="text-white md:text-[40px] md:leading-[56px] text-[32px] leading-[45px]"
-    >
+    <h2 class="md:text-[40px] md:leading-[56px] text-[32px] leading-[45px]">
       {{ title }}
     </h2>
     <p

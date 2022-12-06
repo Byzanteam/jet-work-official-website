@@ -15,7 +15,7 @@
           {{ props.title }}
         </div>
         <h3
-          class="text-white font-semibold md:text-[32px] md:leading-[45px] mt-2 mb-4 text-2xl leading-[34px]"
+          class="font-semibold md:text-[32px] md:leading-[45px] mt-2 mb-4 text-2xl leading-[34px]"
         >
           {{ props.summary }}
         </h3>

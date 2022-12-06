@@ -8,9 +8,7 @@
         <div
           class="radial-gradient absolute w-[606px] h-[606px] md:left-1/2 md:bottom-[247px] left-1/4 bottom-1/2 transform -translate-x-1/2 translate-y-1/2 z-0"
         />
-        <div
-          class="text-white flex flex-col md:items-start items-center relative z-10"
-        >
+        <div class="flex flex-col md:items-start items-center relative z-10">
           <h1 class="text-brand-blue">
             {{ $t('page.home.build') }}
           </h1>

@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: black;
-}
-
 .scrollbar::-webkit-scrollbar {
   height: 6px;
 }
@@ -16,6 +12,35 @@ body {
 }
 
 @layer base {
+  :root {
+    --tw-gray-08: rgba(0, 0, 0, 0.08);
+    --tw-gray-10: rgba(0, 0, 0, 0.1);
+    --tw-gray-20: rgba(0, 0, 0, 0.2);
+    --tw-gray-50: rgba(0, 0, 0, 0.5);
+    --tw-gray-60: rgba(0, 0, 0, 0.6);
+    --tw-gray-80: rgba(0, 0, 0, 0.8);
+  }
+  body {
+    background: theme(colors.white);
+    color: theme(colors.black-1);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --tw-gray-08: rgba(255, 255, 255, 0.08);
+      --tw-gray-10: rgba(255, 255, 255, 0.1);
+      --tw-gray-20: rgba(255, 255, 255, 0.2);
+      --tw-gray-50: rgba(255, 255, 255, 0.5);
+      --tw-gray-60: rgba(255, 255, 255, 0.6);
+      --tw-gray-80: rgba(255, 255, 255, 0.8);
+    }
+
+    body {
+      background: theme(colors.black);
+      color: theme(colors.white);
+    }
+  }
+
   h1 {
     @apply md:text-7xl text-[56px] md:leading-[1.2em] leading-[1.2em] font-semibold;
   }
