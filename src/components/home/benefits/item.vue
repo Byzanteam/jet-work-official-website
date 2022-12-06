@@ -21,7 +21,7 @@ export default {
 </script>
 
 <script setup>
-import { useThemeImgUrl } from '../../hooks'
+import { useThemeImgUrl } from '../../../hooks'
 defineProps({
   image: {
     type: String,
