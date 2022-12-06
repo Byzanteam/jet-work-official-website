@@ -11,6 +11,7 @@
     "lint:fix": "eslint --ext .json,.js,.vue --fix src"
   },
   "dependencies": {
+    "@vueuse/core": "^9.6.0",
     "i18next": "^22.0.2",
     "lodash-es": "^4.17.21",
     "tailwind-scrollbar": "^2.0.1",
