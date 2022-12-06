@@ -11,7 +11,7 @@
         <div
           class="text-white flex flex-col md:items-start items-center relative z-10"
         >
-          <h1 class="text-brand-bule">
+          <h1 class="text-brand-blue">
             {{ $t('page.home.build') }}
           </h1>
           <h1>{{ $t('page.home.as_you_wish') }}</h1>
@@ -23,7 +23,7 @@
           <a
             href="mailto:hi@jet.work"
             target="_blank"
-            class="px-[35px] py-4 border-brand-bule border-solid border rounded-lg hover:bg-brand-bule active:bg-brand-bule focus:bg-transparent text-lg leading-6 font-semibold"
+            class="px-[35px] py-4 border-brand-blue border-solid border rounded-lg hover:bg-brand-blue active:bg-brand-blue focus:bg-transparent text-lg leading-6 font-semibold"
           >
             {{ $t('page.home.contact_us') }}
           </a>

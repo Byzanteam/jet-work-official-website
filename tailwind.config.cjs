@@ -11,7 +11,7 @@ module.exports = {
           65: 'rgba(255, 255, 255, 0.65)',
           80: 'rgba(255, 255, 255, 0.8)',
         },
-        'brand-bule': '#115EF5',
+        'brand-blue': '#115EF5',
       },
       backgroundImage: {
         'work-point': "url('/images/work_bg_point.png')",
