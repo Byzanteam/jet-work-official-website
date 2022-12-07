@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { useThemeImgUrl } from '../../hooks'
+import { useThemeImgUrl } from '@/hooks'
 
 export default {
   name: 'FeatureCard',
