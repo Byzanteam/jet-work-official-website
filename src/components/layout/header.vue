@@ -1,13 +1,24 @@
 <template>
-  <header class="fixed left-0 right-0 h-[88px] z-50 dark:bg-black bg-white">
+  <header
+    class="sticky top-0 left-0 right-0 h-[88px] z-50 dark:bg-black bg-white"
+  >
     <div class="flex justify-between items-center py-7 content-container">
-      <img src="/images/logo_jet.svg" alt="logo" />
-      <HeaderMenu></HeaderMenu>
+      <RouterLink to="/">
+        <img
+          src="/images/logo_jet.svg"
+          alt="logo"
+          @click="isShowMenuOnMobile = false"
+        />
+      </RouterLink>
+      <HeaderMenu v-model:isShowMenu="isShowMenuOnMobile"></HeaderMenu>
     </div>
   </header>
-  <div class="h-[88px] w-full"></div>
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
 import HeaderMenu from './header_menu.vue'
+
+const isShowMenuOnMobile = ref(false)
 </script>

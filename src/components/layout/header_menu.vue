@@ -17,13 +17,15 @@
     >
       <div v-for="(menuItem, name) in menu" :key="name" class="px-5 py-3">
         <div class="text-gray-50 py-1 px-2 w-60">{{ $t(name) }}</div>
-        <div
+        <RouterLink
           v-for="value of menuItem"
           :key="value.label"
-          class="md:hover:bg-gray-10 py-1 px-2 w-60"
+          :to="value.link"
         >
-          {{ value.label }}
-        </div>
+          <div class="md:hover:bg-gray-10 py-1 px-2 w-60">
+            {{ value.label }}
+          </div>
+        </RouterLink>
       </div>
     </div>
     <div
@@ -32,13 +34,18 @@
     >
       <div v-for="(menuItem, name) in menu" :key="name" class="px-5 py-3">
         <div class="text-gray-50 py-3 px-2 w-60">{{ $t(name) }}</div>
-        <div
+        <RouterLink
           v-for="value of menuItem"
           :key="value.label"
-          class="md:hover:bg-gray-10 py-3 px-2 w-60"
+          :to="value.link"
         >
-          {{ value.label }}
-        </div>
+          <div
+            class="md:hover:bg-gray-10 py-3 px-2 w-60"
+            @click="changeMenuState"
+          >
+            {{ value.label }}
+          </div>
+        </RouterLink>
       </div>
     </div>
   </div>
@@ -48,6 +55,9 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 import { translate } from '@/locale'
+
+const props = defineProps({ isShowMenu: { type: Boolean, requeired: true } })
+const emit = defineEmits(['update:isShowMenu'])
 
 const menu = {
   'page.solutions.platform': [
@@ -105,8 +115,7 @@ function setMenuBg() {
 onMounted(() => window.addEventListener('scroll', setMenuBg))
 onUnmounted(() => window.removeEventListener('scroll', setMenuBg))
 
-const isShowMenu = ref(false)
 function changeMenuState() {
-  isShowMenu.value = !isShowMenu.value
+  emit('update:isShowMenu', !props.isShowMenu)
 }
 </script>
