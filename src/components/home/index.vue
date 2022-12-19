@@ -1,14 +1,8 @@
 <template>
-  <div class="min-h-screen flex flex-col items-stretch overflow-x-hidden">
-    <HomeHeader />
-    <main class="flex-grow">
-      <SloganSection />
-      <FeatureSection />
-      <BenefitsSection />
-      <HowItWorkSection />
-    </main>
-    <HomeFooter />
-  </div>
+  <SloganSection />
+  <FeatureSection />
+  <BenefitsSection />
+  <HowItWorkSection />
 </template>
 
 <script>
@@ -21,8 +15,6 @@ export default {
 <script setup>
 import BenefitsSection from './benefits/index.vue'
 import FeatureSection from './features/index.vue'
-import HomeFooter from './footer.vue'
-import HomeHeader from './header.vue'
 import HowItWorkSection from './how-it-work/index.vue'
 import SloganSection from './slogan.vue'
 </script>

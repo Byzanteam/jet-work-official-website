@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name: 'HomeFooter',
+  name: 'LayoutFooter',
   inheritAttrs: false,
 }
 </script>

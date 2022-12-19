@@ -18,9 +18,6 @@ module.exports = {
       backgroundImage: {
         'work-point': "url('/images/work_bg_point.png')",
       },
-      screens: {
-        xl: '1320px',
-      },
     },
   },
   plugins: [require('tailwind-scrollbar')({ nocompatible: true })],
