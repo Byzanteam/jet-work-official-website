@@ -32,22 +32,11 @@ import SolutionTitle from '../components/solution-title.vue'
 import CardList from './components/card-list.vue'
 import ItemList from './components/item-list.vue'
 
-const itemListItems = ['template', 'classify', 'article'].map(value => {
-  const desc = translate(
-    `page.solutions.platform.cms.article.${value}.description`,
-  )
-  return desc.includes('/')
-    ? {
-        icon: `/images/cms/${value}.svg`,
-        title: translate(`page.solutions.platform.cms.article.${value}`),
-        desc: desc.split('/'),
-      }
-    : {
-        icon: `/images/cms/${value}.svg`,
-        title: translate(`page.solutions.platform.cms.article.${value}`),
-        desc,
-      }
-})
+const itemListItems = ['template', 'classify', 'article'].map(value => ({
+  icon: `/images/cms/${value}.svg`,
+  title: translate(`page.solutions.platform.cms.article.${value}`),
+  desc: translate(`page.solutions.platform.cms.article.${value}.description`),
+}))
 
 const cardsItems = ['template', 'configable', 'quick'].map(value => ({
   title: translate(`page.solutions.platform.cms.layout.${value}`),

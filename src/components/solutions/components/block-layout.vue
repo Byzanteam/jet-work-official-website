@@ -3,7 +3,9 @@
     <h3 class="mt-[72px] mb-4 text-center">
       {{ title }}
     </h3>
-    <div class="text-gray-60 text-center md:mb-[56px] mb-[24px]">
+    <div
+      class="text-gray-60 text-center md:px-[25%] px-[10%] md:mb-[56px] mb-[24px]"
+    >
       {{ blockDesc }}
     </div>
     <slot></slot>

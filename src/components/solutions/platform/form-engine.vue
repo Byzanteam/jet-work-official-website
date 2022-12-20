@@ -54,7 +54,7 @@ const cardsItems = ['admin', 'client'].map(value => ({
   img: `/images/form_engine/multi_fields_${value}.png`,
   desc: translate(
     `page.solutions.platform.form_engine.multi_fields_quick_config.${value}.descriptions`,
-  ).split('/'),
+  ),
 }))
 
 const selectorItems = ['data_share', 'improve_efficiency', 'simplify'].map(

@@ -30,7 +30,7 @@ import { ref } from 'vue'
 
 import SvgIcon from '@/components/components/svg-icon.vue'
 
-const props = defineProps({
+defineProps({
   title: { type: String, required: true },
   items: { type: Object, required: true },
 })

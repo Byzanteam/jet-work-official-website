@@ -49,7 +49,7 @@ const cardsItems = ['admin', 'client'].map(value => ({
   img: `/images/flow_engine/configable_${value}.png`,
   desc: translate(
     `page.solutions.platform.flow_engine.configable.${value}.descriptions`,
-  ).split('/'),
+  ),
 }))
 
 const selectorItems = ['efficiency', 'management', 'policy'].map(value => ({

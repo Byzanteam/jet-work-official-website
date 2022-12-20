@@ -6,11 +6,7 @@
       <h4 class="mb-8">
         {{ item.title }}
       </h4>
-      <ul class="list-disc list-inside text-gray-60">
-        <li v-for="desc of item.desc" :key="desc" class="mb-4">
-          {{ desc }}
-        </li>
-      </ul>
+      <ListableText :text="item.desc" class="text-gray-60"></ListableText>
     </div>
     <img
       :src="item.img"
@@ -20,6 +16,7 @@
   </div>
 </template>
 <script setup>
+import ListableText from './listable-text.vue'
 defineProps({
   item: { type: Object, required: true },
 })

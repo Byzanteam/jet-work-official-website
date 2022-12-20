@@ -49,7 +49,7 @@ const cardItem = {
   img: `/images/message_manager/individualization.png`,
   desc: translate(
     `page.solutions.platform.message_manager.message_pipe.individualization.descriptions`,
-  ).split('/'),
+  ),
 }
 
 const selectorItems = ['quick', 'improve'].map(value => ({
