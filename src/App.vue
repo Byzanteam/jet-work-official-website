@@ -1,10 +1,10 @@
 <template>
-  <LayoutHeader></LayoutHeader>
+  <LayoutHeader />
   <div class="min-h-screen flex flex-col items-stretch overflow-x-hidden">
     <main class="flex-grow">
       <RouterView />
     </main>
-    <LayoutFooter></LayoutFooter>
+    <LayoutFooter />
   </div>
 </template>
 

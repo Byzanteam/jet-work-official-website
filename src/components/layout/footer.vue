@@ -20,12 +20,10 @@
           <div class="flex md:flex-row flex-col mt-2">
             <div class="flex items-center">
               <img src="/images/public_security.png" alt="public_security" />
-              <!-- TODO: use i18n -->
-              <span class="ml-2">川公安网备 51010702001785 号 </span>
+              <span class="ml-2">{{ $t('page.home.public_security') }}</span>
             </div>
-            <!-- TODO: use i18n -->
             <div class="text-gray-50 md:ml-2 md:mt-0 mt-2">
-              蜀ICP备15017503号-2
+              {{ $t('page.home.icp') }}
             </div>
           </div>
         </div>
