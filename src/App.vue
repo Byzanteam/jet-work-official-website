@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
-import { HomePage } from './components'
+import { HomePage } from './views'
 </script>

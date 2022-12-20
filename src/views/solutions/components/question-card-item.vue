@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import SvgIcon from '@/components/components/svg-icon.vue'
+import SvgIcon from '@/components/svg-icon.vue'
 
 defineProps({
   item: { type: Object, required: true },

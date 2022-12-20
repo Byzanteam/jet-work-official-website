@@ -28,7 +28,7 @@
 <script setup>
 import { ref } from 'vue'
 
-import SvgIcon from '@/components/components/svg-icon.vue'
+import SvgIcon from '@/components/svg-icon.vue'
 
 defineProps({
   title: { type: String, required: true },
