@@ -44,11 +44,20 @@
   h1 {
     @apply md:text-7xl text-[56px] md:leading-[1.2em] leading-[1.2em] font-semibold;
   }
+  h2 {
+    @apply md:text-[64px] text-[56px] md:leading-[76.8px] leading-[67.2px] font-semibold;
+  }
+  h3 {
+    @apply md:text-[40px] text-[32px] md:leading-[56px] leading-[45px] font-semibold;
+  }
+  h4 {
+    @apply md:text-[24px] text-[20px] md:leading-[28.8px] leading-[24px] font-semibold;
+  }
 }
 
 @layer components {
   .content-container {
-    @apply max-w-[1320px] m-auto px-5 md:px-10 xl:px-[3.75rem]
+    @apply max-w-[1320px] m-auto px-5 md:px-10 xl:px-[3.75rem];
   }
 
   .feature-card {
@@ -57,22 +66,58 @@
   }
 
   .radial-gradient {
-    background-image: radial-gradient(50% 50% at 50% 50%, rgba(17, 94, 245, 0.2) 0%, transparent 100%);
+    background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(17, 94, 245, 0.2) 0%,
+      transparent 100%
+    );
   }
 
   .mask-linear-gradient {
-    background: linear-gradient(269.7deg, theme('colors.white') 0.22%, rgba(0, 0, 0, 0) 99.7%);
+    background: linear-gradient(
+      269.7deg,
+      theme('colors.white') 0.22%,
+      rgba(0, 0, 0, 0) 99.7%
+    );
   }
 
   .mask-linear-gradient-reverse {
-    background: linear-gradient(89.7deg, theme('colors.white') 0.22%, rgba(0, 0, 0, 0) 99.7%);
+    background: linear-gradient(
+      89.7deg,
+      theme('colors.white') 0.22%,
+      rgba(0, 0, 0, 0) 99.7%
+    );
   }
 
   .mask-linear-gradient--dark {
-    background: linear-gradient(269.7deg, theme('colors.black') 0.22%, rgba(0, 0, 0, 0) 99.7%);
+    background: linear-gradient(
+      269.7deg,
+      theme('colors.black') 0.22%,
+      rgba(0, 0, 0, 0) 99.7%
+    );
   }
 
   .mask-linear-gradient-reverse--dark {
-    background: linear-gradient(89.7deg, theme('colors.black') 0.22%, rgba(0, 0, 0, 0) 99.7%);
+    background: linear-gradient(
+      89.7deg,
+      theme('colors.black') 0.22%,
+      rgba(0, 0, 0, 0) 99.7%
+    );
+  }
+
+  .linear-title-bg--dark {
+    background: linear-gradient(
+      90deg,
+      rgba(17, 94, 245, 0.2) 0%,
+      rgba(83, 139, 249, 0.2) 100%
+    );
+  }
+
+  .linear-chosed-item-bg {
+    background: linear-gradient(
+      90deg,
+      rgba(17, 94, 245, 0.3) 0%,
+      rgba(83, 139, 249, 0.3) 100%
+    );
   }
 }

@@ -5,6 +5,7 @@ module.exports = {
       colors: {
         gray: {
           '03': 'rgba(0, 0, 0, 0.03)',
+          '06': 'rgba(0, 0, 0, 0.06)',
           '08': 'var(--tw-gray-08)',
           10: 'var(--tw-gray-10)',
           20: 'var(--tw-gray-20)',
@@ -17,9 +18,6 @@ module.exports = {
       },
       backgroundImage: {
         'work-point': "url('/images/work_bg_point.png')",
-      },
-      screens: {
-        xl: '1320px',
       },
     },
   },
