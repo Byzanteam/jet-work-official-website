@@ -35,7 +35,7 @@ jobs:
           version: 7.1.0
       - name: Get pnpm store directory
         id: pnpm-cache
-        run: echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+        run: echo "pnpm_cache_dir=$(pnpm store path)" >> $GITHUB_OUTPUT
       - uses: actions/cache@v3
         id: use-pnpm-cache # use this to check for `cache-hit` (`steps.pnpm-cache.outputs.cache-hit != 'true'`)
         with:
