@@ -34,6 +34,7 @@
     >
       <TabSwitch>
         <TabPane :label="pageAssets.solutions.project_function.tab.table">
+          <DataHubInterface />
         </TabPane>
         <TabPane :label="pageAssets.solutions.project_function.tab.interface">
         </TabPane>
@@ -76,6 +77,8 @@ import {
   CardItem,
   SolutionTitle,
 } from '@/views/components'
+
+import DataHubInterface from './_interface.vue'
 
 const pageAssets = {
   questions: {
