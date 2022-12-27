@@ -34,7 +34,9 @@
       <TabPane :label="pageText.tab.resident_autonomy">
         <GrassrootAutonomy />
       </TabPane>
-      <TabPane :label="pageText.tab.rule_by_law"> </TabPane>
+      <TabPane :label="pageText.tab.rule_by_law">
+        <GrassrootRuleByLaw />
+      </TabPane>
     </TabSwitch>
   </BlockLayout>
   <BlockLayout
@@ -94,6 +96,7 @@ import GrassrootBuilding from './_building.vue'
 import GrassrootOperation from './_government-operation.vue'
 import GrassrootGovernance from './_governemnt-governance.vue'
 import GrassrootAutonomy from './_resident-autonomy.vue'
+import GrassrootRuleByLaw from './_rule-by-law.vue'
 
 const pageText = {
   questions: {
