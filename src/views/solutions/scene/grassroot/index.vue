@@ -22,7 +22,9 @@
   >
     <img class="mb-6" src="/images/grassroot/solutions.png" alt="" />
     <TabSwitch>
-      <TabPane :label="pageText.tab.building"> </TabPane>
+      <TabPane :label="pageText.tab.building">
+        <GrassrootBuilding />
+      </TabPane>
       <TabPane :label="pageText.tab.government_operation"> </TabPane>
       <TabPane :label="pageText.tab.government_governance"> </TabPane>
       <TabPane :label="pageText.tab.resident_autonomy"> </TabPane>
@@ -81,6 +83,8 @@ import { get } from 'lodash-es'
 
 import { TabSwitch, TabPane } from '@/components'
 import { SolutionTitle, CardItem, BlockLayout } from '@/views/components'
+
+import GrassrootBuilding from './_building.vue'
 
 const pageText = {
   questions: {
