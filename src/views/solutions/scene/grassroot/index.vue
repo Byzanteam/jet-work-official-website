@@ -31,7 +31,9 @@
       <TabPane :label="pageText.tab.government_governance">
         <GrassrootGovernance />
       </TabPane>
-      <TabPane :label="pageText.tab.resident_autonomy"> </TabPane>
+      <TabPane :label="pageText.tab.resident_autonomy">
+        <GrassrootAutonomy />
+      </TabPane>
       <TabPane :label="pageText.tab.rule_by_law"> </TabPane>
     </TabSwitch>
   </BlockLayout>
@@ -91,6 +93,7 @@ import { SolutionTitle, CardItem, BlockLayout } from '@/views/components'
 import GrassrootBuilding from './_building.vue'
 import GrassrootOperation from './_government-operation.vue'
 import GrassrootGovernance from './_governemnt-governance.vue'
+import GrassrootAutonomy from './_resident-autonomy.vue'
 
 const pageText = {
   questions: {
