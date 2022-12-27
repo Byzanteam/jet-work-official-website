@@ -40,6 +40,7 @@
           <AllInOneTableConfig />
         </TabPane>
         <TabPane :label="pageText.solutions.project_function.tab.input">
+          <AllInOneTableInput />
         </TabPane>
         <TabPane :label="pageText.solutions.project_function.tab.management">
         </TabPane>
@@ -102,6 +103,7 @@ import {
 } from '@/views/components'
 
 import AllInOneTableConfig from './_config.vue'
+import AllInOneTableInput from './_input.vue'
 
 const pageText = {
   questions: {
