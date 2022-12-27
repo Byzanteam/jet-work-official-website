@@ -23,7 +23,9 @@
       <img src="/images/approval/flow.webp" alt="" />
     </BlockInLayout>
     <TabSwitch>
-      <TabPane :label="pageText.solutions.flow.tab.event_sorting"> </TabPane>
+      <TabPane :label="pageText.solutions.flow.tab.event_sorting">
+        <ApprovalEventSorting />
+      </TabPane>
       <TabPane :label="pageText.solutions.flow.tab.building">
         <ApprovalBuilding />
       </TabPane>
@@ -100,6 +102,7 @@ import ApprovalDataSave from './_data-save.vue'
 import ApprovalSynthesis from './_synthesis.vue'
 import ApprovalMobile from './_mobile.vue'
 import ApprovalBuilding from './_building.vue'
+import ApprovalEventSorting from './_event-sorting.vue'
 
 const pageText = {
   questions: {
