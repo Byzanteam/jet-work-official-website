@@ -28,7 +28,9 @@
       <TabPane :label="pageText.solutions.flow.tab.mobile"> </TabPane>
       <TabPane :label="pageText.solutions.flow.tab.synthesis"> </TabPane>
       <TabPane :label="pageText.solutions.flow.tab.data_save"> </TabPane>
-      <TabPane :label="pageText.solutions.flow.tab.visualized"> </TabPane>
+      <TabPane :label="pageText.solutions.flow.tab.visualized">
+        <ApprovalVisualized />
+      </TabPane>
     </TabSwitch>
   </BlockLayout>
   <BlockLayout
@@ -84,6 +86,8 @@ import {
   SolutionTitle,
   SelectorList,
 } from '@/views/components'
+
+import ApprovalVisualized from './_visualized'
 
 const pageText = {
   questions: {
