@@ -67,7 +67,10 @@
           "__t__": "消息管理器"
         },
         "cms": {
-          "__t__": "CMS"
+          "__t__": "CMS",
+          "block_title_one": "网页的分类文章搭建",
+          "block_title_two": "速上线模式，布局灵活",
+          "block_title_three": "高用户体验感，打造个性品牌文化"
         },
         "data_hub": {
           "__t__": "Data Hub"
