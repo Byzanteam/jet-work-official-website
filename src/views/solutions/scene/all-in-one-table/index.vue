@@ -43,6 +43,7 @@
           <AllInOneTableInput />
         </TabPane>
         <TabPane :label="pageText.solutions.project_function.tab.management">
+          <AllInOneTableManagement />
         </TabPane>
       </TabSwitch>
     </BlockInLayout>
@@ -104,6 +105,7 @@ import {
 
 import AllInOneTableConfig from './_config.vue'
 import AllInOneTableInput from './_input.vue'
+import AllInOneTableManagement from './_management.vue'
 
 const pageText = {
   questions: {
