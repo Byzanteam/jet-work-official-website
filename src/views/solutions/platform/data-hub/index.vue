@@ -37,6 +37,7 @@
           <DataHubInterface />
         </TabPane>
         <TabPane :label="pageAssets.solutions.project_function.tab.interface">
+          <DataHubTable />
         </TabPane>
       </TabSwitch>
     </BlockInLayout>
@@ -79,6 +80,7 @@ import {
 } from '@/views/components'
 
 import DataHubInterface from './_interface.vue'
+import DataHubTable from './_table.vue'
 
 const pageAssets = {
   questions: {
