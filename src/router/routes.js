@@ -28,5 +28,10 @@ export const routes = [
     path: '/grassroot',
     name: 'grassroot',
     component: () => import('@/views/solutions/scene/grassroot/index.vue'),
-  }
+  },
+  {
+    path: '/grid_admin',
+    name: 'grid_admin',
+    component: () => import('@/views/solutions/scene/grid-admin.vue'),
+  },
 ]
