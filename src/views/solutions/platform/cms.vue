@@ -32,6 +32,11 @@
   </BlockLayout>
 </template>
 
+<script>
+export default {
+  name: 'PlatformCms',
+}
+</script>
 <script setup>
 import { get } from 'lodash-es'
 

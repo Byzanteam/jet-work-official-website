@@ -17,6 +17,11 @@
   <component :is="() => CurrentComponent" />
 </template>
 
+<script>
+export default {
+  name: 'TabSwitch',
+}
+</script>
 <script setup>
 import { useSlots, computed, ref } from 'vue'
 

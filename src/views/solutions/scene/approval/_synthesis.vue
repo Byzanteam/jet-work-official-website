@@ -9,6 +9,11 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'ApprovalSynthesis',
+}
+</script>
 <script setup>
 import { get } from 'lodash-es'
 

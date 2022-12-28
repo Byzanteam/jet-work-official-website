@@ -21,6 +21,11 @@
   </BlockInLayout>
 </template>
 
+<script>
+export default {
+  name: 'AllInOneTableManagement',
+}
+</script>
 <script setup>
 import { get } from 'lodash-es'
 

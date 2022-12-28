@@ -43,6 +43,11 @@
   </BlockInLayout>
 </template>
 
+<script>
+export default {
+  name: 'AllInOneTableConifg',
+}
+</script>
 <script setup>
 import { get } from 'lodash-es'
 

@@ -10,6 +10,11 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'DataHubCard',
+}
+</script>
 <script setup>
 defineProps({
   item: { type: Object, required: true },

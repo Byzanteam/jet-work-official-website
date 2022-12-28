@@ -59,5 +59,5 @@ export const routes = [
     path: '/data_hub',
     name: 'data_hub',
     component: () => import('@/views/solutions/platform/data-hub/index.vue'),
-  }
+  },
 ]

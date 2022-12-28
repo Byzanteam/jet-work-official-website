@@ -78,6 +78,11 @@
   </BlockLayout>
 </template>
 
+<script>
+export default {
+  name: 'SceneSupervision',
+}
+</script>
 <script setup>
 import { get } from 'lodash-es'
 

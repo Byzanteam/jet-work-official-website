@@ -1,6 +1,12 @@
 <template>
   <DataHubTableCard :item="item" :other-item="otherItem" class="w-full" />
 </template>
+
+<script>
+export default {
+  name: 'DataHubInterface',
+}
+</script>
 <script setup>
 import DataHubTableCard from './_table-card.vue'
 

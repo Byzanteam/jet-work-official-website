@@ -97,12 +97,12 @@ import {
   SelectorList,
 } from '@/views/components'
 
-import ApprovalVisualized from './_visualized.vue'
-import ApprovalDataSave from './_data-save.vue'
-import ApprovalSynthesis from './_synthesis.vue'
-import ApprovalMobile from './_mobile.vue'
 import ApprovalBuilding from './_building.vue'
+import ApprovalDataSave from './_data-save.vue'
 import ApprovalEventSorting from './_event-sorting.vue'
+import ApprovalMobile from './_mobile.vue'
+import ApprovalSynthesis from './_synthesis.vue'
+import ApprovalVisualized from './_visualized.vue'
 
 const pageText = {
   questions: {

@@ -93,8 +93,8 @@ import { TabSwitch, TabPane } from '@/components'
 import { SolutionTitle, CardItem, BlockLayout } from '@/views/components'
 
 import GrassrootBuilding from './_building.vue'
-import GrassrootOperation from './_government-operation.vue'
 import GrassrootGovernance from './_governemnt-governance.vue'
+import GrassrootOperation from './_government-operation.vue'
 import GrassrootAutonomy from './_resident-autonomy.vue'
 import GrassrootRuleByLaw from './_rule-by-law.vue'
 

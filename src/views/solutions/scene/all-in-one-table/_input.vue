@@ -22,6 +22,11 @@
   </BlockInLayout>
 </template>
 
+<script>
+export default {
+  name: 'AllInOneTableInput',
+}
+</script>
 <script setup>
 import { get } from 'lodash-es'
 

@@ -33,6 +33,11 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'DataHubTable',
+}
+</script>
 <script setup>
 import { get } from 'lodash-es'
 
