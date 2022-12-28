@@ -24,4 +24,9 @@ export const routes = [
     name: 'cms',
     component: () => import('@/views/solutions/platform/cms.vue'),
   },
+  {
+    path: '/grassroot',
+    name: 'grassroot',
+    component: () => import('@/views/solutions/scene/grassroot/index.vue'),
+  }
 ]

@@ -92,7 +92,14 @@
         "approval": { "__t__": "不见面审批" },
         "all_in_one_table": { "__t__": "一表通" },
         "grid_admin": { "__t__": "精细化网格管理" },
-        "supervision": { "__t__": "督查督办" }
+        "supervision": { "__t__": "督查督办" },
+        "questions": "现状问题",
+        "solutions": "解决方案",
+        "project_value": "方案价值",
+        "project_advantages": "产品优势",
+        "success_cases": "成功案例",
+        "project_function": "功能",
+        "advantage": "优势"
       }
     }
   }
