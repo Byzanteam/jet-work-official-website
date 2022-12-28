@@ -26,7 +26,9 @@
       <TabPane :label="pageText.solutions.flow.tab.event_sorting"> </TabPane>
       <TabPane :label="pageText.solutions.flow.tab.building"> </TabPane>
       <TabPane :label="pageText.solutions.flow.tab.mobile"> </TabPane>
-      <TabPane :label="pageText.solutions.flow.tab.synthesis"> </TabPane>
+      <TabPane :label="pageText.solutions.flow.tab.synthesis">
+        <ApprovalSynthesis />
+      </TabPane>
       <TabPane :label="pageText.solutions.flow.tab.data_save">
         <ApprovalDataSave />
       </TabPane>
@@ -91,6 +93,7 @@ import {
 
 import ApprovalVisualized from './_visualized.vue'
 import ApprovalDataSave from './_data-save.vue'
+import ApprovalSynthesis from './_synthesis.vue'
 
 const pageText = {
   questions: {
