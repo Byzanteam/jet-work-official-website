@@ -15,6 +15,11 @@
   </BlockInLayout>
 </template>
 
+<script>
+export default {
+  name: 'GrassrootGovernance',
+}
+</script>
 <script setup>
 import { get } from 'lodash-es'
 

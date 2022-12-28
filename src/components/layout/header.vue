@@ -15,6 +15,12 @@
   </header>
 </template>
 
+<script>
+export default {
+  name: 'LayoutHeader',
+  inheritAttrs: false,
+}
+</script>
 <script setup>
 import { ref } from 'vue'
 

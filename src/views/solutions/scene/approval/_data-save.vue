@@ -10,6 +10,11 @@
   <ImgCardOnly :item="cardOnlyItem" class="mt-6 bg-gray-08" />
 </template>
 
+<script>
+export default {
+  name: 'ApprovalDataSave',
+}
+</script>
 <script setup>
 import { get } from 'lodash-es'
 

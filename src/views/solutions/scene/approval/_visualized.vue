@@ -4,6 +4,12 @@
     <img src="/images/approval/visualized_2.webp" alt="" />
   </BlockLayout>
 </template>
+
+<script>
+export default {
+  name: 'ApprovalVisualized',
+}
+</script>
 <script setup>
 import { BlockLayout } from '@/views/components'
 

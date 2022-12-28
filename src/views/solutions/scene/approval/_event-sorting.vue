@@ -11,6 +11,11 @@
   </BlockLayout>
 </template>
 
+<script>
+export default {
+  name: 'ApprovalEventSorting',
+}
+</script>
 <script setup>
 import { get } from 'lodash-es'
 
