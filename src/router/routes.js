@@ -9,4 +9,9 @@ export const routes = [
     name: 'form_engine',
     component: () => import('@/views/solutions/platform/form-engine.vue'),
   },
+    {
+    path: '/flow_engine',
+    name: 'flow_engine',
+    component: () => import('@/views/solutions/platform/flow-engine.vue'),
+  },
 ]
