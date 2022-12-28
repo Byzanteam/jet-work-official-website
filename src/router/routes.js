@@ -38,5 +38,10 @@ export const routes = [
     path: '/tracking_platform',
     name: 'tracking_platform',
     component: () => import('@/views/solutions/scene/tracking-platform.vue'),
+  },
+  {
+    path: '/supervision',
+    name: 'supervision',
+    component: () => import('@/views/solutions/scene/supervision.vue'),
   }
 ]
