@@ -32,7 +32,7 @@
   <BlockLayout
     :title="$t('page.solutions.platform.flow_engine.block_title_three')"
   >
-    <SelectorList :items="selectorItems" class="md:mb-[183px] mb-9" />
+    <SelectorList :items="selectorItems" />
   </BlockLayout>
 </template>
 
