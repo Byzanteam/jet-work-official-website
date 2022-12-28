@@ -29,7 +29,7 @@
       />
     </div>
     <BlockInLayout :title="pageText.solutions.platform_build.title">
-      <img src="/images/all_in_one_table/platform_build.webp" alt="" />
+      <img src="/images/all_in_one_table/platform_build.png" alt="" />
     </BlockInLayout>
     <BlockInLayout
       :title="pageText.solutions.project_function.title"
@@ -74,9 +74,11 @@
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.scene.success_cases')"
-    class="bg-gray-08"
+    class="dark:linear-block-item-bg--dark linear-block-item-bg"
   >
-    <div class="flex md:flex-row flex-col rounded-lg overflow-hidden">
+    <div
+      class="flex md:flex-row flex-col rounded-lg shadow-2xl overflow-hidden"
+    >
       <div class="linear-image-item-bg">
         <img src="/images/all_in_one_table/success_cases.webp" alt="" />
       </div>

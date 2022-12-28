@@ -28,7 +28,7 @@
     </div>
   </BlockLayout>
   <BlockLayout :title="$t('page.solutions.platform.cms.block_title_three')">
-    <SelectorList :items="selectorItems" class="md:mb-[183px] mb-9" />
+    <SelectorList :items="selectorItems" />
   </BlockLayout>
 </template>
 

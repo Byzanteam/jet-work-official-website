@@ -108,6 +108,13 @@
     );
   }
 
+  .mask-title-bg {
+    background: linear-gradient(89.9deg, #ffffff 0.09%, #f3f4f6 99.93%);
+  }
+  .mask-title-bg--dark {
+    background: linear-gradient(90.01deg, #000000 0.01%, #141414 99.99%);
+  }
+
   .linear-chosed-item-bg {
     background: linear-gradient(
       90deg,

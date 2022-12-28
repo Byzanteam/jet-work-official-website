@@ -32,7 +32,7 @@
   <BlockLayout
     :title="$t('page.solutions.platform.form_engine.block_title_three')"
   >
-    <SelectorList :items="selectorItems" class="md:mb-[183px] mb-9" />
+    <SelectorList :items="selectorItems" />
   </BlockLayout>
 </template>
 
@@ -78,13 +78,13 @@ const pageAssets = {
     admin: {
       title: '管理端',
       descriptions:
-        '丰富字段种类，满足用户不同场景表单构建/灵活可“拖拽式”的构建表单/即编辑即上线的操作模式/低代码实现表单与其他应用集成',
+        '丰富字段种类，满足用户不同场景表单构建- 灵活可“拖拽式”的构建表单- 即编辑即上线的操作模式- 低代码实现表单与其他应用集成',
       image: '/images/form_engine/multi_fields_admin.webp',
     },
     client: {
       title: '用户端',
       descriptions:
-        '支持电脑端、手机端、Pad 端的登录使用/支持多平台适配，可在微信、网页、钉钉等平台中进行表单填写/界面设计简单易懂，交互性强，极易上手/快速生成填写链接或二维码，方便传播和填写，打开链接或扫二维码即可填写',
+        '支持电脑端、手机端、Pad 端的登录使用- 支持多平台适配，可在微信、网页、钉钉等平台中进行表单填写- 界面设计简单易懂，交互性强，极易上手- 快速生成填写链接或二维码，方便传播和填写，打开链接或扫二维码即可填写',
       image: '/images/form_engine/multi_fields_client.webp',
     },
   },

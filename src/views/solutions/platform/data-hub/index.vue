@@ -34,10 +34,10 @@
     >
       <TabSwitch>
         <TabPane :label="pageAssets.solutions.project_function.tab.table">
-          <DataHubInterface />
+          <DataHubTable />
         </TabPane>
         <TabPane :label="pageAssets.solutions.project_function.tab.interface">
-          <DataHubTable />
+          <DataHubInterface />
         </TabPane>
       </TabSwitch>
     </BlockInLayout>
