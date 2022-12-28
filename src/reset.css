@@ -48,10 +48,13 @@
     @apply md:text-[64px] text-[56px] md:leading-[77px] leading-[67px] font-semibold;
   }
   h3 {
-    @apply md:text-[40px] text-[32px] md:leading-[56px] leading-[45px] font-semibold;
+    @apply md:text-[40px] text-[32px] md:leading-[53px] leading-[42px] font-semibold;
   }
   h4 {
-    @apply md:text-[24px] text-[20px] md:leading-[29px] leading-[24px] font-semibold;
+    @apply md:text-[28px] text-[24px] md:leading-[34px] leading-[29px] font-semibold;
+  }
+  h5 {
+    @apply text-[24px] leading-[29px] font-semibold;
   }
 }
 
@@ -103,5 +106,28 @@
       theme('colors.black') 0.22%,
       rgba(0, 0, 0, 0) 99.7%
     );
+  }
+
+  .linear-chosed-item-bg {
+    background: linear-gradient(
+      90deg,
+      rgba(17, 94, 245, 0.3) 0%,
+      rgba(83, 139, 249, 0.3) 100%
+    );
+  }
+
+  .linear-block-item-bg {
+    background: linear-gradient(
+      180deg,
+      #f7f7f7 0%,
+      rgba(247, 247, 247, 0) 100%
+    );
+  }
+  .linear-block-item-bg--dark {
+    background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
+  }
+
+  .linear-image-item-bg {
+    background: linear-gradient(90deg, #115ef5 0%, #538bf9 100%);
   }
 }
