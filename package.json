@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .json,.js,.vue src",
-    "lint:fix": "eslint --ext .json,.js,.vue --fix src"
+    "lint:fix": "eslint --ext .json,.js,.vue --fix src",
+    "commitlint": "commitlint"
   },
   "dependencies": {
     "@vueuse/core": "^9.6.0",
@@ -19,6 +20,8 @@
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
+    "@byzanteam/commitlint-config": "^1.0.0",
+    "@commitlint/cli": "^17.3.0",
     "@vitejs/plugin-vue": "^3.1.0",
     "autoprefixer": "^10.4.12",
     "eslint": "^8.26.0",
