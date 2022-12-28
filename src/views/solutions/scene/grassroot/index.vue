@@ -65,9 +65,11 @@
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.scene.success_cases')"
-    class="bg-gray-08"
+    class="dark:linear-block-item-bg--dark linear-block-item-bg"
   >
-    <div class="flex md:flex-row flex-col rounded-lg overflow-hidden">
+    <div
+      class="flex md:flex-row flex-col rounded-lg shadow-2xl overflow-hidden"
+    >
       <div class="flex-1 linear-image-item-bg">
         <img src="/images/grassroot/success_cases.webp" alt="" />
       </div>
@@ -93,8 +95,8 @@ import { TabSwitch, TabPane } from '@/components'
 import { SolutionTitle, CardItem, BlockLayout } from '@/views/components'
 
 import GrassrootBuilding from './_building.vue'
-import GrassrootOperation from './_government-operation.vue'
 import GrassrootGovernance from './_governemnt-governance.vue'
+import GrassrootOperation from './_government-operation.vue'
 import GrassrootAutonomy from './_resident-autonomy.vue'
 import GrassrootRuleByLaw from './_rule-by-law.vue'
 
