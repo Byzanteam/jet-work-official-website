@@ -43,5 +43,10 @@ export const routes = [
     path: '/supervision',
     name: 'supervision',
     component: () => import('@/views/solutions/scene/supervision.vue'),
+  },
+  {
+    path: '/approval',
+    name: 'approval',
+    component: () => import('@/views/solutions/scene/approval/index.vue'),
   }
 ]
