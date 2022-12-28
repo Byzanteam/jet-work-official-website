@@ -37,6 +37,7 @@
     >
       <TabSwitch>
         <TabPane :label="pageText.solutions.project_function.tab.config">
+          <AllInOneTableConfig />
         </TabPane>
         <TabPane :label="pageText.solutions.project_function.tab.input">
         </TabPane>
@@ -99,6 +100,8 @@ import {
   BlockLayout,
   CardItem,
 } from '@/views/components'
+
+import AllInOneTableConfig from './_config.vue'
 
 const pageText = {
   questions: {
