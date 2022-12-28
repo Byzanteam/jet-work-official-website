@@ -18,5 +18,10 @@ export const routes = [
     path: '/message_manager',
     name: 'message_manager',
     component: () => import('@/views/solutions/platform/message-manager.vue'),
-  }
+  },
+  {
+    path: '/cms',
+    name: 'cms',
+    component: () => import('@/views/solutions/platform/cms.vue'),
+  },
 ]
