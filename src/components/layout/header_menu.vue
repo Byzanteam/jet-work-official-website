@@ -12,8 +12,7 @@
       />
     </div>
     <div
-      class="md:group-hover:flex hidden absolute right-0 top-12 w-auto gap-5 border border-solid rounded-lg shadow-lg"
-      :class="scrollBg"
+      class="md:group-hover:flex hidden absolute right-0 top-12 w-auto gap-5 border dark:bg-black bg-white border-solid rounded-lg shadow-lg"
     >
       <div v-for="(menuItem, name) in menu" :key="name" class="px-5 py-3">
         <div class="text-gray-50 py-1 px-2 w-60">{{ $t(name) }}</div>
@@ -103,17 +102,6 @@ const menu = {
     },
   ],
 }
-
-const scrollBg = ref('')
-function setMenuBg() {
-  if (window.scrollY > 0) {
-    scrollBg.value = 'dark:bg-black bg-white'
-  } else {
-    scrollBg.value = ''
-  }
-}
-onMounted(() => window.addEventListener('scroll', setMenuBg))
-onUnmounted(() => window.removeEventListener('scroll', setMenuBg))
 
 function changeMenuState() {
   emit('update:isShowMenu', !props.isShowMenu)
