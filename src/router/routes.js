@@ -34,4 +34,9 @@ export const routes = [
     name: 'grid_admin',
     component: () => import('@/views/solutions/scene/grid-admin.vue'),
   },
+  {
+    path: '/tracking_platform',
+    name: 'tracking_platform',
+    component: () => import('@/views/solutions/scene/tracking-platform.vue'),
+  }
 ]
