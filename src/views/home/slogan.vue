@@ -29,15 +29,20 @@
       </div>
       <!-- image container -->
       <div class="md:basis-0 md:grow-[5]">
-        <img src="/images/slogan_image.png" alt="slogan image" />
+        <img :src="useThemeImgUrl('slogan_image.webp')" alt="slogan image" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { useThemeImgUrl } from '@/hooks'
+
 export default {
   name: 'SloganSection',
   inheritAttrs: false,
+  setup() {
+    return { useThemeImgUrl }
+  },
 }
 </script>
