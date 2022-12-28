@@ -29,7 +29,7 @@
       />
     </div>
     <BlockInLayout :title="pageText.solutions.platform_build.title">
-      <img src="/images/all_in_one_table/platform_build.webp" alt="" />
+      <img src="/images/all_in_one_table/platform_build.png" alt="" />
     </BlockInLayout>
     <BlockInLayout
       :title="pageText.solutions.project_function.title"

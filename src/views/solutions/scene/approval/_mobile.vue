@@ -7,6 +7,41 @@
         :item="item"
         class="bg-gray-08"
       />
+      <div
+        class="flex-1 flex flex-col justify-between rounded-lg md:pl-24 md:pt-24 pl-12 pt-12 bg-gray-08"
+      >
+        <div class="flex flex-col md:pr-24 pr-12">
+          <h5 class="mb-8">
+            {{ pageText.proxy.title }}
+          </h5>
+          <div class="text-gray-80">{{ pageText.proxy.description }}</div>
+          <ul
+            v-for="itemValue of proxyCardItems"
+            :key="itemValue.title"
+            class="list-disc list-inside mt-4"
+          >
+            <div>{{ itemValue.title }}</div>
+            <li class="my-4">
+              {{ itemValue.desc }}
+            </li>
+          </ul>
+        </div>
+        <img :src="pageText.proxy.image" alt="" class="w-full mt-8" />
+      </div>
+      <div
+        class="flex-1 flex flex-col justify-between rounded-lg md:pl-24 md:pt-24 pl-12 pt-12 bg-gray-08"
+      >
+        <div class="flex flex-col md:pr-24 pr-12">
+          <h5 class="mb-8">
+            {{ pageText.one_thing.title }}
+          </h5>
+          <div class="text-gray-80 mb-4">
+            {{ pageText.one_thing.description }}
+          </div>
+          <div class="text-gray-80">{{ pageText.one_thing.description2 }}</div>
+        </div>
+        <img :src="pageText.one_thing.image" alt="" class="w-full mt-8" />
+      </div>
     </div>
   </BlockLayout>
 </template>
@@ -21,19 +56,19 @@ const pageText = {
     '掌上办建设主要服务于群众/企业对于政务服务事项的查询、发起及审批查询，工作人员端进行受理、流程流转以及数据留存，领导可通过数据分析可视化来对整个工作进行决策判断。',
   build: {
     title: '建设思路',
-    img: '/images/approval/mobile_build.webp',
+    image: '/images/approval/mobile_build.webp',
     description:
       '掌上办整体思路是由群众/企业将事项在线上填报电子表单发起后，跳过综窗工作人员，直接由业务科室在线受理确认，平台自动将数据传入垂管系统和省、市一体化平台，让工作人员进行办理，并通过平台流转到审核节点进行办理，并将结果反馈给发起人。',
   },
   component: {
     title: '“一件事一次办”服务模块',
-    img: '/images/approval/mobile_component.webp',
+    image: '/images/approval/mobile_component.webp',
     description:
       '通过建设一件事一次办服务模块对主题式、套餐式服务事项进行配置，通过梳理不同的基础事项进行组合归类，实现多个事项一次性办理，减少申请人跑动现场的次数和提交重复的材料。',
   },
   proxy: {
     title: '授权代办模块',
-    img: '/images/approval/mobile_proxy.webp',
+    image: '/images/approval/mobile_proxy.webp',
     description:
       '利用区块链技术，实现在线授权代办业务，保证数据真实性和可追溯性。',
     authorizer: {
@@ -54,7 +89,7 @@ const pageText = {
   },
   one_thing: {
     title: '身故一件事模块',
-    img: '/images/approval/mobile_one_thing.webp',
+    image: '/images/approval/mobile_one_thing.webp',
     description:
       '为群众实现“一站式”的亲人身故后事项在线办理，将10 个县级部门办理的42项老年人“身故事”集成为“一件事”。',
     description2:
@@ -62,9 +97,13 @@ const pageText = {
   },
 }
 
-const cardItems = ['build', 'component', 'proxy', 'one_thing'].map(key => ({
+const cardItems = ['build', 'component'].map(key => ({
   title: get(pageText, `${key}.title`),
   desc: get(pageText, `${key}.description`),
   img: get(pageText, `${key}.image`),
+}))
+const proxyCardItems = ['authorizer', 'agent', 'blockchain'].map(key => ({
+  title: get(pageText, `proxy.${key}.title`),
+  desc: get(pageText, `proxy.${key}.description`),
 }))
 </script>

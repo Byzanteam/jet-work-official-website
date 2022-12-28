@@ -5,7 +5,7 @@
     img="/images/approval/title_img.webp"
   />
   <BlockLayout :title="$t('page.solutions.scene.questions')">
-    <div class="flex flex-col gap-6 md:px-23">
+    <div class="flex md:flex-row flex-col gap-6 md:px-23">
       <CardItem
         v-for="item of questionCardItems"
         :key="item.title"
@@ -97,12 +97,12 @@ import {
   SelectorList,
 } from '@/views/components'
 
-import ApprovalVisualized from './_visualized.vue'
-import ApprovalDataSave from './_data-save.vue'
-import ApprovalSynthesis from './_synthesis.vue'
-import ApprovalMobile from './_mobile.vue'
 import ApprovalBuilding from './_building.vue'
+import ApprovalDataSave from './_data-save.vue'
 import ApprovalEventSorting from './_event-sorting.vue'
+import ApprovalMobile from './_mobile.vue'
+import ApprovalSynthesis from './_synthesis.vue'
+import ApprovalVisualized from './_visualized.vue'
 
 const pageText = {
   questions: {
@@ -157,20 +157,20 @@ const pageText = {
   },
   project_function: {
     authority: {
-      img: '/images/approval/function_authority.webp',
+      image: '/images/approval/function_authority.webp',
       icon: '/images/approval/authority.svg',
       title: '组织权限配置',
       description: '组织架构 Excel 一键导入，权限分配，实现数字孪生',
     },
     page: {
-      img: '/images/approval/function_page.webp',
+      image: '/images/approval/function_page.webp',
       icon: '/images/approval/page.svg',
       title: '页面填报配置',
       description:
         '政务服务主要是以群众/企业进行发起，低代码平台通过快速搭建前端填报页面。根据业务特性，无需代码直接生成',
     },
     flow: {
-      img: '/images/approval/function_flow.webp',
+      image: '/images/approval/function_flow.webp',
       icon: '/images/approval/flow.svg',
       title: '流程节点配置',
       description:
