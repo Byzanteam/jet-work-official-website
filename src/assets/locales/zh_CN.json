@@ -1,5 +1,5 @@
 {
-  "page": {
+   "page": {
     "home": {
       "build": {
         "__t__": "构建",
@@ -58,10 +58,16 @@
       "platform": {
         "__t__": "平台解决方案",
         "flow_engine": {
-          "__t__": "流程引擎"
+          "__t__": "流程引擎",
+          "block_title_one": "各类业务流程审批",
+          "block_title_two": "灵活的配置能力和强大的业务集成能力",
+          "block_title_three": "为您多方面的赋能，全方位的提升效率"
         },
         "form_engine": {
-          "__t__": "表单引擎"
+          "__t__": "表单引擎",
+          "block_title_one": "数据采集",
+          "block_title_two": "丰富字段类型和快速配置模式",
+          "block_title_three": "快速收集数据和高效便捷管理数据"
         },
         "message_manager": {
           "__t__": "消息管理器",
