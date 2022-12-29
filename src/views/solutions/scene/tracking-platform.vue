@@ -59,7 +59,12 @@
   </BlockLayout>
   <BlockLayout :title="$t('page.solutions.scene.project_advantages')">
     <div class="flex md:flex-row flex-col">
-      <CardItem v-for="item of itemListItems" :key="item.title" :item="item" />
+      <CardItem
+        v-for="item of itemListItems"
+        :key="item.title"
+        :item="item"
+        class="flex-1"
+      />
     </div>
   </BlockLayout>
   <BlockLayout :title="pageAssets.success_cases.title" class="bg-gray-08">
@@ -219,22 +224,24 @@ const pageAssets = {
   project_advantages: {
     efficient: {
       title: '统调平台就是以“高效处置一件事”为抓手',
-      description: '',
+      description: '以最早时间、用最小成本、解决最突出问题、取得最佳综合效益。',
       icon: '/images/tracking_platform/efficient.svg',
     },
     modernization: {
       title: '以城市治理体系和治理能力现代化为方向',
-      description: '',
+      description: '不断提高城市治理科学化、精准化、规范化管理水平。',
       icon: '/images/tracking_platform/modernization.svg',
     },
     target: {
       title: '实现“一屏观全域、一网管全城”的目标定位',
-      description: '',
+      description:
+        '“一屏观全域”，在一个屏幕上，实现城市治理要素、对象、过程、结果等各类信息的全息全景呈现；- “一网管全城”，把城市治理领域的所有事项放到一个平台上，进行集成化、集中化、联动化、闭环化的处置，不仅能够看得到，还要管得住。',
       icon: '/images/tracking_platform/target.svg',
     },
     practical: {
       title: '强化“应用为要、管用为王”的价值取向',
-      description: '',
+      description:
+        '聚焦城市运行管理中的重点、难点、热点和群众“急难愁盼”的问题。',
       icon: '/images/tracking_platform/practical.svg',
     },
   },
