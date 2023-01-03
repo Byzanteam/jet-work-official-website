@@ -7,19 +7,27 @@
   <BlockLayout
     :title="$t('page.solutions.platform.form_engine.block_title_one')"
   >
-    <div class="flex md:flex-row flex-col flex-wrap">
-      <CardItem
-        v-for="item of itemListItems"
-        :key="item.title"
-        :item="item"
-        class="flex-1"
-      />
+    <div class="flex flex-col">
+      <div
+        class="flex md:flex-row md:engine-linear-gradient--line md:data-hub-border-t flex-col flex-wrap"
+      >
+        <CardItem
+          v-for="item of itemListItems"
+          :key="item.title"
+          :item="item"
+          class="flex-1"
+        />
+      </div>
+      <div class="hidden md:flex md:data-hub-border-b">
+        <div
+          v-for="item of itemListItems"
+          :key="item.title"
+          class="h-[80px] data-hub-item"
+        >
+          <span class="hidden">{{ item }}</span>
+        </div>
+      </div>
     </div>
-  </BlockLayout>
-  <BlockLayout
-    :title="$t('page.solutions.platform.form_engine.block_title_two')"
-    class="dark:bg-gray-08 bg-gray-03"
-  >
     <div class="flex md:flex-row flex-col gap-6 mb-[72px]">
       <ImgCardItem
         v-for="item of cardsItems"
