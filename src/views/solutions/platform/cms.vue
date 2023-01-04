@@ -16,7 +16,7 @@
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.platform.cms.block_title_two')"
-    class="bg-gray-08"
+    class="dark:bg-gray-08 bg-gray-03"
   >
     <div class="flex md:flex-row flex-col gap-6 mb-[72px]">
       <ImgCardItem

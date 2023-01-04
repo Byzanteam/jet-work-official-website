@@ -37,7 +37,7 @@
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.scene.project_value')"
-    class="bg-gray-08"
+    class="dark:bg-gray-08 bg-gray-03"
   >
     <div class="flex md:flex-row flex-col gap-6">
       <CardItem

@@ -46,7 +46,7 @@
   <BlockLayout
     :title="$t('page.solutions.scene.project_value')"
     :block-desc="pageAssets.project_value.description"
-    class="bg-gray-08"
+    class="dark:bg-gray-08 bg-gray-03"
   >
     <div class="flex md:flex-row flex-col gap-6 mb-[72px]">
       <CardItem
@@ -67,7 +67,10 @@
       />
     </div>
   </BlockLayout>
-  <BlockLayout :title="pageAssets.success_cases.title" class="bg-gray-08">
+  <BlockLayout
+    :title="pageAssets.success_cases.title"
+    class="dark:linear-block-item-bg--dark linear-block-item-bg"
+  >
     <BlockInLayout :title="pageAssets.success_cases.cases_name">
       <h5 class="text-center mb-6 mt-8">
         {{ pageAssets.success_cases.find }}
