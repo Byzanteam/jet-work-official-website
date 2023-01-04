@@ -116,11 +116,7 @@
   }
 
   .linear-chosed-item-bg {
-    background: linear-gradient(
-      90deg,
-      rgba(17, 94, 245, 0.3) 0%,
-      rgba(83, 139, 249, 0.3) 100%
-    );
+    background: rgba(17, 94, 245, 0.1);
   }
 
   .linear-block-item-bg {
