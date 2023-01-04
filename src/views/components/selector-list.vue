@@ -24,7 +24,7 @@
     <img
       :src="items[chosedIndex].img"
       alt=""
-      class="md:flex-1 md:block hidden"
+      class="md:flex-1 md:block xl:flex-[2] hidden"
     />
   </div>
 </template>
