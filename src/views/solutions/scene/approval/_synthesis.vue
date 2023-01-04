@@ -4,7 +4,7 @@
       v-for="item of cardItems"
       :key="item.title"
       :item="item"
-      class="bg-gray-08"
+      class="dark:bg-gray-08 bg-gray-03"
     />
   </div>
 </template>

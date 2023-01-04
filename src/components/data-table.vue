@@ -1,6 +1,6 @@
 <template>
   <table class="border border-gray-08 rounded-lg">
-    <thead class="bg-gray-08">
+    <thead class="dark:bg-gray-08 bg-gray-03">
       <tr>
         <th v-for="head of headers" :key="head" class="p-3">{{ head }}</th>
       </tr>

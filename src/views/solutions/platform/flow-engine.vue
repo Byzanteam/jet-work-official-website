@@ -18,14 +18,14 @@
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.platform.flow_engine.block_title_two')"
-    class="bg-gray-08"
+    class="dark:bg-gray-08 bg-gray-03"
   >
     <div class="flex md:flex-row flex-col gap-6 mb-[72px]">
       <ImgCardItem
         v-for="item of cardsItems"
         :key="item.title"
         :item="item"
-        class="dark:bg-gray-08 bg-white"
+        class="dark:bg-gray-10 bg-white"
       />
     </div>
   </BlockLayout>
