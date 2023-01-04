@@ -19,7 +19,6 @@ import ListableText from './_listable-text.vue'
 const props = defineProps({
   item: { type: Object, required: true },
   align: { type: String, default: 'items-start' },
-  hasBg: { type: Boolean, default: false },
 })
 
 const textCenter = computed(() =>

@@ -20,7 +20,7 @@
     :title="$t('page.solutions.platform.message_manager.block_title_two')"
     class="dark:bg-gray-08 bg-gray-03"
   >
-    <ImgCardOnly :item="cardItem" class="dark:bg-gray-08 bg-white" />
+    <ImgCardOnly :item="cardItem" class="ddark:bg-gray-10 bg-white" />
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.platform.message_manager.block_title_three')"

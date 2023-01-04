@@ -5,7 +5,7 @@
         v-for="item of valueCardItems"
         :key="item.title"
         :item="item"
-        class="bg-gray-08"
+        class="dark:bg-gray-08 bg-gray-03"
       />
     </div>
   </BlockLayout>
