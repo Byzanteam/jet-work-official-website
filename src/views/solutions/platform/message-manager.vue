@@ -80,7 +80,7 @@ const pageText = {
       title: '效率提升',
       description: '提高组织消息上传下达的效率，从而提高组织运转效益',
       icon: '/images/message_manager/improve.svg',
-      image: '/images/message_manager/improve.webp',
+      image: '/images/message_manager/improve.png',
     },
   },
 }
