@@ -51,10 +51,10 @@
     @apply md:text-[40px] text-[32px] md:leading-[53px] leading-[42px] font-semibold;
   }
   h4 {
-    @apply md:text-[28px] text-[24px] md:leading-[34px] leading-[29px] font-semibold;
+    @apply md:text-[28px] text-[24px] md:leading-[34px] leading-[29px] font-medium;
   }
   h5 {
-    @apply text-[24px] leading-[29px] font-semibold;
+    @apply text-[24px] leading-[29px] font-medium;
   }
 }
 
