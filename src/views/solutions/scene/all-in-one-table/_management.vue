@@ -8,6 +8,12 @@
         class="dark:bg-gray-08 bg-gray-03"
       />
     </div>
+    <div class="mt-6">
+      <CardItem
+        :item="fusionValueCardItem"
+        class="dark:bg-gray-08 bg-gray-03"
+      />
+    </div>
   </BlockInLayout>
   <BlockInLayout :title="pageText.data_config.title">
     <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
@@ -91,10 +97,14 @@ const pageText = {
   },
 }
 
-const fusionValueCardItems = ['population', 'space', 'legal'].map(key => ({
+const fusionValueCardItems = ['population', 'space'].map(key => ({
   title: get(pageText, `data_fusion.${key}.title`),
   desc: get(pageText, `data_fusion.${key}.description`),
 }))
+const fusionValueCardItem = {
+  title: get(pageText, 'data_fusion.legal.title'),
+  desc: get(pageText, 'data_fusion.legal.description'),
+}
 
 const updateValueCardItems = [
   'delete',
