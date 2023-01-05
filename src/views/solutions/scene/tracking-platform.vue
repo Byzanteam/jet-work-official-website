@@ -68,7 +68,7 @@
     </div>
   </BlockLayout>
   <BlockLayout
-    :title="pageAssets.success_cases.title"
+    :title="$t('page.solutions.scene.success_cases')"
     class="dark:linear-block-item-bg--dark linear-block-item-bg"
   >
     <BlockInLayout :title="pageAssets.success_cases.cases_name">
@@ -251,7 +251,7 @@ const pageAssets = {
   success_cases: {
     cases_name: '青羊区时间交互枢纽平台',
     cases_detail: '',
-    find: '发现中心',
+    find: '发现中心（配置中心）',
     use: '调度中心（调度中心 & 处置中心）',
     analysis: '分析中心',
   },
