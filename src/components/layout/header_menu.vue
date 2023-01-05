@@ -1,5 +1,5 @@
 <template>
-  <div class="relative group">
+  <div class="relative group cursor-pointer">
     <div class="h-12 flex items-center justify-end" @click="changeMenuState">
       <div class="md:block" :class="{ hidden: isShowMenu }">
         {{ $t('page.solutions') }}

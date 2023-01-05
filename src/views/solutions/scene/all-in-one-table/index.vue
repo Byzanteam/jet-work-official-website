@@ -11,7 +11,7 @@
         :key="item.title"
         :item="item"
         align="items-center"
-        class="flex-1 bg-gray-08"
+        class="flex-1 dark:bg-gray-08 bg-gray-03"
       />
     </div>
   </BlockLayout>
@@ -25,7 +25,7 @@
         v-for="item of solutionValueItems"
         :key="item.desc"
         :item="item"
-        class="flex-1 bg-gray-08"
+        class="flex-1 dark:bg-gray-08 bg-gray-03"
       />
     </div>
     <BlockInLayout :title="pageText.solutions.platform_build.title">
@@ -51,14 +51,14 @@
   <BlockLayout
     :title="$t('page.solutions.scene.project_value')"
     :block-desc="pageText.project_value.description"
-    class="bg-gray-08"
+    class="dark:bg-gray-08 bg-gray-03"
   >
     <div class="flex md:flex-row flex-col gap-6 mb-[72px]">
       <CardItem
         v-for="item of projectValueCardItmes"
         :key="item.title"
         :item="item"
-        class="flex-1 dark:bg-gray-08 bg-white"
+        class="flex-1 dark:bg-gray-10 bg-white"
       />
     </div>
   </BlockLayout>

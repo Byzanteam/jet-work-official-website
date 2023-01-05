@@ -5,10 +5,10 @@
         v-for="item of cardItems"
         :key="item.title"
         :item="item"
-        class="bg-gray-08"
+        class="dark:bg-gray-08 bg-gray-03"
       />
       <div
-        class="flex-1 flex flex-col justify-between rounded-lg md:pl-24 md:pt-24 pl-12 pt-12 bg-gray-08"
+        class="flex-1 flex flex-col justify-between rounded-lg md:pl-24 md:pt-24 pl-12 pt-12 dark:bg-gray-08 bg-gray-03"
       >
         <div class="flex flex-col md:pr-24 pr-12">
           <h5 class="mb-8">
@@ -18,7 +18,7 @@
           <ul
             v-for="itemValue of proxyCardItems"
             :key="itemValue.title"
-            class="list-disc list-inside mt-4"
+            class="list-disc list-inside mt-4 text-gray-80"
           >
             <div>{{ itemValue.title }}</div>
             <li class="my-4">
@@ -29,7 +29,7 @@
         <img :src="pageText.proxy.image" alt="" class="w-full mt-8" />
       </div>
       <div
-        class="flex-1 flex flex-col justify-between rounded-lg md:pl-24 md:pt-24 pl-12 pt-12 bg-gray-08"
+        class="flex-1 flex flex-col justify-between rounded-lg md:pl-24 md:pt-24 pl-12 pt-12 dark:bg-gray-08 bg-gray-03"
       >
         <div class="flex flex-col md:pr-24 pr-12">
           <h5 class="mb-8">

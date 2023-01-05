@@ -116,11 +116,7 @@
   }
 
   .linear-chosed-item-bg {
-    background: linear-gradient(
-      90deg,
-      rgba(17, 94, 245, 0.3) 0%,
-      rgba(83, 139, 249, 0.3) 100%
-    );
+    background: rgba(17, 94, 245, 0.1);
   }
 
   .linear-block-item-bg {
@@ -136,5 +132,80 @@
 
   .linear-image-item-bg {
     background: linear-gradient(90deg, #115ef5 0%, #538bf9 100%);
+  }
+
+  .engine-linear-gradient--line {
+    border-bottom: 2px solid;
+    border-image: linear-gradient(
+        to right,
+        #ffffff,
+        rgb(217, 217, 217),
+        #ffffff
+      )
+      1;
+  }
+
+  .data-hub-border-b > div {
+    flex: 1;
+  }
+  .data-hub-border-t .px-7:nth-child(n + 2) {
+    border-left: 2px solid;
+    border-image: linear-gradient(#ffffff, rgb(217, 217, 217)) 1;
+  }
+  .data-hub-border-b div:nth-child(n + 2) {
+    border-left: 2px solid;
+    border-image: linear-gradient(rgb(217, 217, 217), #ffffff) 1;
+  }
+
+  .data-hub-border-t div:nth-child(1) {
+    background: linear-gradient(
+      315deg,
+      rgba(217, 217, 217, 0.2) 0%,
+      rgba(217, 217, 217, 0) 27.94%
+    );
+  }
+
+  .data-hub-border-b div:nth-last-child(1) {
+    background: linear-gradient(
+      135deg,
+      rgba(217, 217, 217, 0.2) 0%,
+      rgba(217, 217, 217, 0) 27.94%
+    );
+  }
+
+  .px-7 {
+    position: relative;
+  }
+
+  .data-hub-border-t div:nth-child(1)::after {
+    content: '';
+    width: 20rem;
+    height: 5rem;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    border-image: linear-gradient(to left, #c2c8d2, #ffffff) 1;
+    display: block;
+    background: transparent;
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+  }
+
+  .data-hub-item {
+    position: relative;
+  }
+
+  .data-hub-border-b div:nth-last-child(1)::after {
+    content: '';
+    width: 20rem;
+    height: 5rem;
+    border-top: 2px solid;
+    border-image: linear-gradient(to right, #c2c8d2, #ffffff) 1;
+
+    display: block;
+    background: transparent;
+    position: absolute;
+    left: -2px;
+    top: -2px;
   }
 }

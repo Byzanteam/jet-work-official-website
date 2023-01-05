@@ -14,7 +14,7 @@
       </div>
     </BlockInLayout>
     <BlockInLayout :title="pageText.table_data.title">
-      <CardItem :item="valueCardItem" class="bg-gray-08" />
+      <CardItem :item="valueCardItem" class="dark:bg-gray-08 bg-gray-03" />
     </BlockInLayout>
     <BlockInLayout :title="pageText.event.title">
       <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
@@ -24,7 +24,7 @@
           :item="item"
         />
       </div>
-      <div class="p-6 bg-gray-08 mt-6 rounded-lg">
+      <div class="p-12 mt-6 rounded-lg dark:bg-gray-08 bg-gray-03">
         <h5>
           {{ pageText.event.edit.title }}
         </h5>

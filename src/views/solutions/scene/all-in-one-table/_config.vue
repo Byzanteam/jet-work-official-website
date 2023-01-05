@@ -5,7 +5,7 @@
         v-for="item of billValueCardItems"
         :key="item.title"
         :item="item"
-        class="bg-gray-08"
+        class="dark:bg-gray-08 bg-gray-03"
       />
     </div>
   </BlockInLayout>
@@ -15,29 +15,35 @@
         v-for="item of tagValueCardItems"
         :key="item.title"
         :item="item"
-        class="bg-gray-08"
+        class="dark:bg-gray-08 bg-gray-03"
       />
     </div>
   </BlockInLayout>
   <BlockInLayout :title="pageText.form_config.title">
-    <CardItem :item="formValueCardItem" class="bg-gray-08 mb-6" />
+    <CardItem
+      :item="formValueCardItem"
+      class="dark:bg-gray-08 bg-gray-03 mb-6"
+    />
     <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
       <CardItem
         v-for="item of formValueCardItems"
         :key="item.title"
         :item="item"
-        class="bg-gray-08"
+        class="dark:bg-gray-08 bg-gray-03"
       />
     </div>
   </BlockInLayout>
   <BlockInLayout :title="pageText.organize_config.title">
-    <CardItem :item="organizeValueCardItem" class="bg-gray-08 mb-6" />
+    <CardItem
+      :item="organizeValueCardItem"
+      class="dark:bg-gray-08 bg-gray-03 mb-6"
+    />
     <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
       <CardItem
         v-for="item of organizeValueCardItems"
         :key="item.title"
         :item="item"
-        class="bg-gray-08"
+        class="dark:bg-gray-08 bg-gray-03"
       />
     </div>
   </BlockInLayout>
@@ -92,7 +98,7 @@ const pageText = {
   form_config: {
     title: '表单配置',
     new_form: {
-      title: '编辑新标单',
+      title: '编辑新表单',
       descriptions:
         '单行文本：设置单行文本字段，实现用户填写该字段时输入单行文本- 多行文本：设置多行文本字段，实现用户填写该字段时输入多行文本- 数字：设置数字文本字段，实现用户填写该字段时只能输入数字文本- 身份证：设置身份证号码文本字段，实现用户填写该字段时输入身份证号码并校验对错- 手机号码：设置手机号码文本字段，实现用户填写该字段时输入手机号码并校验对错- 单选：设置单选字段，编辑选项（包括其他）及选项数量，实现用户填写该字段可根据选项进行单项选择或填写一个其他自定义选项- 多选：设置多选字段，编辑选项（包括其他）、选项数量及选择规则，实现用户填写该字段可根据选项及规则多项选择或填写自定义选项- 日期选择：设置日期字段，实现用户填写该字段时选择日期（年月日）- 时间选择：设置时间字段，实现用户填写该字段时选择时间（时分）- 日期和时间选择：设置日期时间字段，实现用户填写该字段时选择日期时间（年月日时分）- 级联选择：设置级联选择字段，引用级联选择管理建立的级联选择，实现用户填写该字段时根据设置规则进行分层选择。- 组织选择：设置组织选择字段，实现用户填写该字段时选择自己所属组织- 成员选择：设置成员选择字段，实现用户填写该字段时选择自己管辖组织下成员- 计算字段：设置根据表单其他字段值，计算出自定义公式值字段- 星级评分：设置星级评分字段，实现用户填写该字段时进行星级评分- 文件上传：设置文件上传字段，实现用户填写该字段时可从本地常规文件（包括excel、word等）、手机照片图库（图片或视频）或调用手机摄像头拍照片或录像进行上传- 地理定位：设置地理定位字段，限制定位范围，实现用户填写该字段时实时定位用户所在地理位置并显示。如果超出设定范围则无法提交- 明细清单：设置明细清单字段，在该字段里再添加明细字段进行任意组合（可设置除明细清单字段所有其他字段），实现用户填写该字段时，用户可根据实际填写需求，以整个明细字段组作为单位增加或减少进行填写（至少保留一组明细字段）- 表单章节：在表单填写页面插入章节字段，章节可以文字图片形式展示给用户，无需用户填写- 添加填写页面附件：表单创建者或协作者可上传附件，用户填写表单查看正文时，可下载该附件- 分页填写：表单字段过多时，管理员可根据需求设置不同字段以分页形式展示，用户根据设置规则分页填写该表单- 草稿箱：支持用户将当前表单的编辑操作，保存放入草稿箱，并可在草稿箱中打开并重新编辑- 预览：管理员可预览当前编辑表单填写效果- 表单正文：编辑表单的说明性信息，表单正文信息支持富文本编辑器- 表单标题：编辑表单的标题，可在搜索表单时快速搜索',
     },

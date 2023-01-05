@@ -4,10 +4,10 @@
       v-for="item of cardItems"
       :key="item.title"
       :item="item"
-      class="bg-gray-08"
+      class="dark:bg-gray-08 bg-gray-03"
     />
   </div>
-  <ImgCardOnly :item="cardOnlyItem" class="mt-6 bg-gray-08" />
+  <ImgCardOnly :item="cardOnlyItem" class="mt-6 dark:bg-gray-08 bg-gray-03" />
 </template>
 
 <script>

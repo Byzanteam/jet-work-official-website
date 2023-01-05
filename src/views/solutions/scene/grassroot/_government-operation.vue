@@ -1,14 +1,23 @@
 <template>
   <div class="flex md:flex-row flex-col gap-6">
-    <CardItem :item="valueCardItemOne" class="flex-[3] bg-gray-08" />
-    <CardItem :item="valueCardItemTwo" class="flex-[1] bg-gray-08" />
+    <CardItem
+      :item="valueCardItemOne"
+      class="flex-[3] dark:bg-gray-08 bg-gray-03"
+    />
+    <CardItem
+      :item="valueCardItemTwo"
+      class="flex-[1] dark:bg-gray-08 bg-gray-03"
+    />
   </div>
   <DataTable
     :headers="tableHeader"
     :body="tableItems"
     class="block w-full my-6 overflow-x-scroll"
   />
-  <BlockInLayout :title="pageText.instance" class="bg-gray-08 rounded-lg pb-0">
+  <BlockInLayout
+    :title="pageText.instance"
+    class="dark:bg-gray-08 bg-gray-03 rounded-lg pb-0"
+  >
     <div class="mt-14 overflow-hidden">
       <img src="/images/grassroot/government_operation_instance.webp" />
     </div>

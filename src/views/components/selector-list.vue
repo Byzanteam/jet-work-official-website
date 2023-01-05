@@ -4,7 +4,7 @@
       <div
         v-for="(item, index) of items"
         :key="item.title"
-        class="flex items-start p-6 gap-3 rounded-lg md:w-[384px] sm:w-[332px] w-full overflow-hidden"
+        class="flex items-start p-6 gap-3 rounded-lg md:w-[384px] sm:w-[332px] w-full overflow-hidden cursor-pointer"
         :class="
           chosedIndex === index
             ? 'md:linear-chosed-item-bg md:text-brand-blue'

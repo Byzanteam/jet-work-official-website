@@ -1,9 +1,11 @@
 <template>
-  <div class="flex md:justify-evenly w-full mb-12 overflow-x-scroll">
+  <div
+    class="flex md:justify-evenly w-full mb-12 overflow-x-scroll border-b text-gray-60"
+  >
     <div
       v-for="slot of labelAndComponents"
       :key="slot.label"
-      class="flex-shrink-0 w-max py-3 mx-10"
+      class="flex-shrink-0 w-max py-3 mx-10 cursor-pointer"
       :class="
         slot.label === currentLabel
           ? 'text-brand-blue border-b-2 border-b-brand-blue'

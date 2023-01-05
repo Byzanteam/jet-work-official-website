@@ -5,7 +5,7 @@
         v-for="item of collectValueCardItems"
         :key="item.title"
         :item="item"
-        class="bg-gray-08"
+        class="dark:bg-gray-08 bg-gray-03"
       />
     </div>
   </BlockInLayout>
@@ -15,10 +15,13 @@
         v-for="item of updateValueCardItems"
         :key="item.title"
         :item="item"
-        class="bg-gray-08"
+        class="dark:bg-gray-08 bg-gray-03"
       />
     </div>
-    <CardItem :item="updateValueCardItem" class="bg-gray-08 mt-6" />
+    <CardItem
+      :item="updateValueCardItem"
+      class="dark:bg-gray-08 bg-gray-03 mt-6"
+    />
   </BlockInLayout>
 </template>
 
