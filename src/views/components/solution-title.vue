@@ -11,9 +11,11 @@
         >
           {{ solution }}
         </div>
-        <h2 class="flex-auto">
-          {{ title }}
-        </h2>
+        <div class="flex-auto">
+          <h2 class="text-center">
+            {{ title }}
+          </h2>
+        </div>
       </div>
       <div class="md:flex-grow-[8] flex-shrink-0 md:self-end self-start">
         <img
