@@ -4,7 +4,10 @@
     :title="$t('page.solutions.platform.cms')"
     img="/images/cms/title_img.png"
   />
-  <BlockLayout :title="$t('page.solutions.platform.cms.block_title_one')">
+  <BlockLayout
+    :title="$t('page.solutions.platform.cms.block_title_one')"
+    padding="pt-[105px] pb-[5px]"
+  >
     <div class="flex flex-col">
       <div
         class="flex md:flex-row md:engine-linear-gradient--line md:data-hub-border-t flex-col flex-wrap"
@@ -29,9 +32,10 @@
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.platform.cms.block_title_two')"
+    padding="py-[72px]"
     class="dark:bg-gray-08 bg-gray-03"
   >
-    <div class="flex md:flex-row flex-col gap-6 mb-[72px]">
+    <div class="flex md:flex-row flex-col gap-6">
       <ImgCardItem
         v-for="item of cardsItems"
         :key="item.title"
@@ -40,7 +44,10 @@
       />
     </div>
   </BlockLayout>
-  <BlockLayout :title="$t('page.solutions.platform.cms.block_title_three')">
+  <BlockLayout
+    :title="$t('page.solutions.platform.cms.block_title_three')"
+    padding="pt-[104px] md:pb-[183px] pb-36"
+  >
     <SelectorList :items="selectorItems" />
   </BlockLayout>
 </template>

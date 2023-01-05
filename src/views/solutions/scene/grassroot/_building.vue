@@ -16,7 +16,7 @@
   />
   <BlockInLayout
     :title="pageText.instance"
-    class="dark:bg-gray-08 bg-gray-03 rounded-lg pb-0"
+    class="dark:bg-gray-08 bg-gray-03 rounded-lg md:pb-0 pb-0"
   >
     <div class="mt-14 overflow-hidden">
       <img src="/images/grassroot/building_instance.webp" />
