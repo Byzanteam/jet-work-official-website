@@ -1,5 +1,7 @@
 <template>
-  <div class="flex md:justify-evenly w-full mb-12 overflow-x-scroll">
+  <div
+    class="flex md:justify-evenly w-full mb-12 overflow-x-scroll border-b text-gray-60"
+  >
     <div
       v-for="slot of labelAndComponents"
       :key="slot.label"
