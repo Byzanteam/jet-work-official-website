@@ -11,7 +11,7 @@
         >
           {{ solution }}
         </div>
-        <h2 class="flex-auto">
+        <h2 class="flex-auto text-center">
           {{ title }}
         </h2>
       </div>
