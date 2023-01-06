@@ -4,7 +4,10 @@
     :title="$t('page.solutions.scene.approval')"
     img="/images/approval/title_img.webp"
   />
-  <BlockLayout :title="$t('page.solutions.scene.questions')">
+  <BlockLayout
+    :title="$t('page.solutions.scene.questions')"
+    padding="md:pt-[105px] md:pb-[101px] pt-16 pb-8"
+  >
     <div class="flex md:flex-row flex-col gap-6 md:px-23">
       <CardItem
         v-for="item of questionCardItems"
@@ -17,9 +20,10 @@
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.scene.solutions')"
+    padding="py-[72px]"
     class="dark:linear-block-item-bg--dark linear-block-item-bg"
   >
-    <BlockInLayout :title="pageText.solutions.flow.title">
+    <BlockInLayout :title="pageText.solutions.flow.title" class="md:pt-0 pt-0">
       <img src="/images/approval/flow.webp" alt="" />
     </BlockInLayout>
     <TabSwitch>
@@ -45,6 +49,7 @@
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.scene.project_value')"
+    padding="py-[72px]"
     class="dark:bg-gray-08 bg-gray-03"
   >
     <div class="flex md:flex-row flex-col gap-6 mb-[72px]">
@@ -56,7 +61,10 @@
       />
     </div>
   </BlockLayout>
-  <BlockLayout :title="$t('page.solutions.scene.project_function')">
+  <BlockLayout
+    :title="$t('page.solutions.scene.project_function')"
+    padding="md:pt-[104px] md:pb-32 pt-16 pb-[88px]"
+  >
     <SelectorList :items="selectorListItems" />
   </BlockLayout>
   <BlockLayout
@@ -66,7 +74,10 @@
     <img src="/images/approval/advantage_1.webp" alt="" />
     <img src="/images/approval/advantage_2.webp" alt="" />
   </BlockLayout>
-  <BlockLayout :title="$t('page.solutions.scene.project_advantages')">
+  <BlockLayout
+    :title="$t('page.solutions.scene.project_advantages')"
+    padding="md:pt-[104px] md:pb-32 pt-16 pb-[88px]"
+  >
     <div class="flex md:flex-row flex-col">
       <CardItem
         v-for="item of itemListItems"
@@ -79,7 +90,8 @@
   <BlockLayout
     :title="$t('page.solutions.scene.success_cases')"
     :block-desc="pageText.success_cases.description"
-    class="dark:linear-block-item-bg--dark linear-block-item-bg px-32"
+    padding="py-[72px] md:mb-20"
+    class="dark:linear-block-item-bg--dark linear-block-item-bg"
   >
     <img src="/images/approval/success_cases.webp" alt="" />
   </BlockLayout>

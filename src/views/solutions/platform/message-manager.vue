@@ -6,6 +6,7 @@
   />
   <BlockLayout
     :title="$t('page.solutions.platform.message_manager.block_title_one')"
+    padding="pt-[105px] pb-[5px]"
   >
     <div class="flex flex-col">
       <div
@@ -31,12 +32,14 @@
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.platform.message_manager.block_title_two')"
+    padding="py-[72px]"
     class="dark:bg-gray-08 bg-gray-03"
   >
     <ImgCardOnly :item="cardItem" class="ddark:bg-gray-10 bg-white" />
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.platform.message_manager.block_title_three')"
+    padding="pt-[104px] md:pb-[183px] pb-36"
   >
     <SelectorList :items="selectorItems" />
   </BlockLayout>

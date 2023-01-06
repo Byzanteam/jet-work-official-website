@@ -4,7 +4,10 @@
     :title="$t('page.solutions.platform.data_hub')"
     img="/images/data_hub/title_img.webp"
   />
-  <BlockLayout :title="$t('page.solutions.scene.questions')">
+  <BlockLayout
+    :title="$t('page.solutions.scene.questions')"
+    padding="md:pt-[105px] md:pb-[101px] pt-16 pb-8"
+  >
     <div class="flex flex-col gap-6">
       <div class="grid gap-6 md:grid-cols-3 grid-cols-1 md:px-23">
         <CardItem
@@ -20,6 +23,7 @@
   <BlockLayout
     :title="$t('page.solutions.scene.solutions')"
     :block-desc="pageAssets.solutions.description"
+    padding="pt-[72px] pb-9"
     class="dark:linear-block-item-bg--dark linear-block-item-bg"
   >
     <BlockInLayout :title="pageAssets.solutions.flow.title">
@@ -45,6 +49,7 @@
   <BlockLayout
     :title="$t('page.solutions.scene.project_value')"
     :block-desc="pageAssets.project_value.description"
+    padding="py-[72px]"
     class="dark:bg-gray-08 bg-gray-03"
   >
     <div class="flex md:flex-row flex-col gap-6 mb-[72px]">
@@ -56,7 +61,10 @@
       />
     </div>
   </BlockLayout>
-  <BlockLayout :title="$t('page.solutions.scene.project_advantages')">
+  <BlockLayout
+    :title="$t('page.solutions.scene.project_advantages')"
+    padding="py-[72px] md:mb-24"
+  >
     <div class="flex md:flex-row flex-col">
       <CardItem
         v-for="item of itemListItems"

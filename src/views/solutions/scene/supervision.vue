@@ -6,7 +6,7 @@
   />
   <BlockLayout
     :title="$t('page.solutions.scene.questions')"
-    :block-desc="pageText.questions.description"
+    padding="md:pt-[105px] md:pb-[101px] pt-16 pb-8"
   >
     <div class="flex flex-col gap-6">
       <div class="grid gap-6 md:grid-cols-3 grid-cols-1 md:px-23">
@@ -32,9 +32,10 @@
   <BlockLayout
     :title="$t('page.solutions.scene.solutions')"
     :block-desc="pageText.solutions.description"
+    padding="py-[72px]"
     class="dark:linear-block-item-bg--dark linear-block-item-bg"
   >
-    <BlockInLayout :title="pageText.solutions.flow.title">
+    <BlockInLayout :title="pageText.solutions.flow">
       <img
         class="md:my-14 my-6"
         src="/images/supervision/stand_work_flow.png"
@@ -58,6 +59,7 @@
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.scene.project_value')"
+    padding="py-[72px]"
     class="dark:bg-gray-08 bg-gray-03"
   >
     <div class="flex md:flex-row flex-col gap-6 mb-[72px]">
@@ -69,7 +71,10 @@
       />
     </div>
   </BlockLayout>
-  <BlockLayout :title="$t('page.solutions.scene.project_advantages')">
+  <BlockLayout
+    :title="$t('page.solutions.scene.project_advantages')"
+    padding="md:pt-[104px] md:pb-32 pt-16 pb-[88px]"
+  >
     <div class="flex md:flex-row flex-col">
       <CardItem
         v-for="item of itemListItems"
@@ -100,8 +105,6 @@ import {
 
 const pageText = {
   questions: {
-    description:
-      '督办工作是政府机关、企事业单位的一项重要工作内容和工作职责。它是决策执行程序中必不可少的重要环节，是确保政令畅通和党的路线、方针、政策及重要工作部署落到实处的重要手段，是党政领导机关改进工作作风、提高工作效率的有效措施。目前的督办工作存在以下几个问题：',
     collect_hard: {
       icon: '/images/tips.svg',
       title: '事项来源分散，收集难，维护难',

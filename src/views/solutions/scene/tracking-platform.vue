@@ -4,7 +4,10 @@
     :title="$t('page.solutions.scene.tracking_platform')"
     img="/images/tracking_platform/title_img.webp"
   />
-  <BlockLayout :title="$t('page.solutions.scene.questions')">
+  <BlockLayout
+    :title="$t('page.solutions.scene.questions')"
+    padding="md:pt-[105px] md:pb-[101px] pt-16 pb-8"
+  >
     <div class="grid gap-6 md:grid-cols-4 grid-cols-1 md:px-23">
       <CardItem
         v-for="item of questionCardItems"
@@ -18,6 +21,7 @@
   <BlockLayout
     :title="$t('page.solutions.scene.solutions')"
     :block-desc="pageAssets.solutions.descriptions"
+    padding="py-[72px]"
     class="dark:linear-block-item-bg--dark linear-block-item-bg"
   >
     <BlockInLayout :title="pageAssets.solutions.architecture">
@@ -46,6 +50,7 @@
   <BlockLayout
     :title="$t('page.solutions.scene.project_value')"
     :block-desc="pageAssets.project_value.description"
+    padding="py-[72px]"
     class="dark:bg-gray-08 bg-gray-03"
   >
     <div class="flex md:flex-row flex-col gap-6 mb-[72px]">
@@ -57,7 +62,10 @@
       />
     </div>
   </BlockLayout>
-  <BlockLayout :title="$t('page.solutions.scene.project_advantages')">
+  <BlockLayout
+    :title="$t('page.solutions.scene.project_advantages')"
+    padding="md:pt-[104px] md:pb-32 pt-16 pb-[88px]"
+  >
     <div class="flex md:flex-row flex-col">
       <CardItem
         v-for="item of itemListItems"
@@ -68,11 +76,15 @@
     </div>
   </BlockLayout>
   <BlockLayout
-    :title="pageAssets.success_cases.title"
+    :title="$t('page.solutions.scene.success_cases')"
+    padding="py-[72px] md:mb-44"
     class="dark:linear-block-item-bg--dark linear-block-item-bg"
   >
-    <BlockInLayout :title="pageAssets.success_cases.cases_name">
-      <h5 class="text-center mb-6 mt-8">
+    <BlockInLayout
+      :title="pageAssets.success_cases.cases_name"
+      class="md:pt-0 pt-0"
+    >
+      <h5 class="text-center mb-6 mt-12">
         {{ pageAssets.success_cases.find }}
       </h5>
       <div class="flex md:flex-row flex-col gap-6">
@@ -84,7 +96,7 @@
           <img :src="item" alt="" />
         </div>
       </div>
-      <h5 class="text-center mb-6 mt-8">
+      <h5 class="text-center mb-6 mt-12">
         {{ pageAssets.success_cases.use }}
       </h5>
       <div class="flex md:flex-row flex-col gap-6">
@@ -96,7 +108,7 @@
           <img :src="item" alt="" />
         </div>
       </div>
-      <h5 class="text-center mb-6 mt-8">
+      <h5 class="text-center mb-6 mt-12">
         {{ pageAssets.success_cases.analysis }}
       </h5>
       <div class="flex flex-col gap-6">
@@ -251,7 +263,7 @@ const pageAssets = {
   success_cases: {
     cases_name: '青羊区时间交互枢纽平台',
     cases_detail: '',
-    find: '发现中心',
+    find: '发现中心（配置中心）',
     use: '调度中心（调度中心 & 处置中心）',
     analysis: '分析中心',
   },
