@@ -53,17 +53,9 @@
       />
     </div>
   </BlockLayout>
-  <BlockLayout
-    :title="$t('page.solutions.scene.project_advantages')"
-    padding="pt-[104px] md:pb-[256px] pb-[72px]"
-  >
-    <div class="flex md:flex-row flex-col">
-      <CardItem
-        v-for="item of itemListItems"
-        :key="item.title"
-        :item="item"
-        class="flex-1"
-      />
+  <BlockLayout :title="$t('page.solutions.scene.project_advantages')">
+    <div class="grid gap-6 md:grid-cols-2 grid-cols-1">
+      <CardItem v-for="item of itemListItems" :key="item.title" :item="item" />
     </div>
   </BlockLayout>
 </template>

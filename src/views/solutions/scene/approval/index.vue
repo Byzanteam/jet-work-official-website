@@ -74,11 +74,8 @@
     <img src="/images/approval/advantage_1.webp" alt="" />
     <img src="/images/approval/advantage_2.webp" alt="" />
   </BlockLayout>
-  <BlockLayout
-    :title="$t('page.solutions.scene.project_advantages')"
-    padding="md:pt-[104px] md:pb-32 pt-16 pb-[88px]"
-  >
-    <div class="flex md:flex-row flex-col">
+  <BlockLayout :title="$t('page.solutions.scene.project_advantages')">
+    <div class="flex md:flex-row flex-col gap-6">
       <CardItem
         v-for="item of itemListItems"
         :key="item.title"
