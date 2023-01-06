@@ -21,11 +21,16 @@
         </div>
       </div>
     </div>
-    <img
-      :src="items[chosedIndex].img"
-      alt=""
-      class="md:flex-1 md:block hidden"
-    />
+
+    <div class="md:flex-1 xl:flex-[2] md:block hidden">
+      <img
+        :src="items[chosedIndex].img"
+        height="375"
+        width="572"
+        alt=""
+        class="xl:block xl:-my-0 xl:mx-auto"
+      />
+    </div>
   </div>
 </template>
 
