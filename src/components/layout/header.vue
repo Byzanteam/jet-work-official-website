@@ -2,9 +2,9 @@
   <header class="sticky top-0 left-0 right-0 h-[88px] z-50" :class="scrollBg">
     <div class="flex justify-between items-center py-7 content-container">
       <RouterLink to="/">
-        <SvgIcon
-          path="/images/logo_jet.svg"
-          keep-color
+        <img
+          src="/images/logo_jet.svg"
+          alt="logo"
           @click="isShowMenuOnMobile = false"
         />
       </RouterLink>
