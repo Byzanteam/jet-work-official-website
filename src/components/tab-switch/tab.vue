@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex md:justify-evenly w-full mb-12 overflow-x-scroll border-b text-gray-60"
+    class="flex md:justify-evenly w-full mb-12 overflow-x-scroll text-gray-60"
   >
     <div
       v-for="slot of labelAndComponents"
@@ -16,6 +16,10 @@
       {{ slot.label }}
     </div>
   </div>
+  <div
+    class="relative bottom-[3.0625rem] left-0 w-full h-[1px] bg-gray-10"
+  ></div>
+
   <component :is="() => CurrentComponent" />
 </template>
 
