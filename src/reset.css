@@ -21,8 +21,8 @@
     --tw-gray-80: rgba(0, 0, 0, 0.8);
   }
   body {
-    background: theme(colors.white);
-    color: theme(colors.black-1);
+    background: theme('colors.white');
+    color: theme('colors.black-1');
   }
 
   @media (prefers-color-scheme: dark) {
@@ -36,8 +36,8 @@
     }
 
     body {
-      background: theme(colors.black);
-      color: theme(colors.white);
+      background: theme('colors.black');
+      color: theme('colors.white');
     }
   }
 
