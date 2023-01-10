@@ -17,7 +17,7 @@
     "commitlint": "commitlint"
   },
   "lint-staged": {
-    "src/**/*.{ts,vue}": "eslint --fix"
+    "src/**/*.{js,vue}": "eslint --fix"
   },
   "dependencies": {
     "@vueuse/core": "^9.6.0",
@@ -28,7 +28,7 @@
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "@byzanteam/commitlint-config": "^1.0.0",
+    "@byzanteam/commitlint-config": "^1.0.2",
     "@commitlint/cli": "^17.3.0",
     "@vitejs/plugin-vue": "^3.1.0",
     "autoprefixer": "^10.4.12",

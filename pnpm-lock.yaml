@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@byzanteam/commitlint-config': ^1.0.0
+  '@byzanteam/commitlint-config': ^1.0.2
   '@commitlint/cli': ^17.3.0
   '@vitejs/plugin-vue': ^3.1.0
   '@vueuse/core': ^9.6.0
@@ -33,7 +33,7 @@ dependencies:
   vue-router: 4.1.6_vue@3.2.41
 
 devDependencies:
-  '@byzanteam/commitlint-config': 1.0.0
+  '@byzanteam/commitlint-config': 1.0.2
   '@commitlint/cli': 17.3.0
   '@vitejs/plugin-vue': 3.1.2_vite@3.1.8+vue@3.2.41
   autoprefixer: 10.4.12_postcss@8.4.18
@@ -98,8 +98,8 @@ packages:
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
 
-  /@byzanteam/commitlint-config/1.0.0:
-    resolution: {integrity: sha512-lHhr3QplWcMgzUIOfP6TJrY29r64QUmqpbpCs0Ctjj0Y4+2MaaNAlyuz3r9TUT+wdg/3m5DD/2Ck6a5PHNYvDA==}
+  /@byzanteam/commitlint-config/1.0.2:
+    resolution: {integrity: sha512-xTE0ZSo7enTJo8BlatP+o0mN9homsxSM2FBKeoEIZo3ieiHU65mNhJBQqgkYlN1oqerfhBZsd+x4ZARsaURpmA==}
     dev: true
 
   /@commitlint/cli/17.3.0:
