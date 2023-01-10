@@ -71,13 +71,8 @@
     :title="$t('page.solutions.scene.project_advantages')"
     padding="md:pt-[104px] md:pb-32 pt-16 pb-[88px]"
   >
-    <div class="flex md:flex-row flex-col">
-      <CardItem
-        v-for="item of itemListItems"
-        :key="item.title"
-        :item="item"
-        class="flex-1"
-      />
+    <div class="grid gap-6 md:grid-cols-2 grid-cols-1">
+      <CardItem v-for="item of itemListItems" :key="item.title" :item="item" />
     </div>
   </BlockLayout>
   <BlockLayout
