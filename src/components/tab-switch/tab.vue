@@ -1,25 +1,22 @@
 <template>
-  <div
-    class="flex md:justify-evenly w-full mb-12 overflow-x-scroll text-gray-60"
-  >
-    <div
-      v-for="slot of labelAndComponents"
-      :key="slot.label"
-      class="flex-shrink-0 w-max py-3 mx-10 cursor-pointer"
-      :class="
-        slot.label === currentLabel
-          ? 'text-brand-blue border-b-2 border-b-brand-blue'
-          : ''
-      "
-      @click="() => switchTo(slot.label)"
-    >
-      {{ slot.label }}
+  <div class="relative w-full md:mb-12 mb-6 text-gray-60">
+    <div class="flex overflow-x-scroll">
+      <div
+        v-for="slot of labelAndComponents"
+        :key="slot.label"
+        class="flex-shrink-0 w-max py-3 md:mx-16 mx-9 cursor-pointer"
+        :class="
+          slot.label === currentLabel
+            ? 'text-brand-blue border-b-2 border-b-brand-blue'
+            : ''
+        "
+        @click="() => switchTo(slot.label)"
+      >
+        {{ slot.label }}
+      </div>
     </div>
+    <div class="relative bottom-[1px] left-0 w-full h-[1px] bg-gray-10" />
   </div>
-  <div
-    class="relative bottom-[3.0625rem] left-0 w-full h-[1px] bg-gray-10"
-  ></div>
-
   <component :is="() => CurrentComponent" />
 </template>
 
