@@ -4,8 +4,11 @@
     :title="$t('page.solutions.scene.tracking_platform')"
     img="/images/tracking_platform/title_img.webp"
   />
-  <BlockLayout :title="$t('page.solutions.scene.questions')">
-    <div class="grid gap-6 md:grid-cols-2 grid-cols-1 md:px-23">
+  <BlockLayout
+    :title="$t('page.solutions.scene.questions')"
+    padding="md:pt-[105px] md:pb-[101px] pt-16 pb-8"
+  >
+    <div class="grid gap-6 md:grid-cols-4 grid-cols-1 md:px-23">
       <CardItem
         v-for="item of questionCardItems"
         :key="item.title"
@@ -59,7 +62,10 @@
       />
     </div>
   </BlockLayout>
-  <BlockLayout :title="$t('page.solutions.scene.project_advantages')">
+  <BlockLayout
+    :title="$t('page.solutions.scene.project_advantages')"
+    padding="md:pt-[104px] md:pb-32 pt-16 pb-[88px]"
+  >
     <div class="grid gap-6 md:grid-cols-2 grid-cols-1">
       <CardItem v-for="item of itemListItems" :key="item.title" :item="item" />
     </div>
