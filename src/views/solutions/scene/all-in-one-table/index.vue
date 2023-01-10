@@ -83,15 +83,17 @@
     <div
       class="flex md:flex-row flex-col rounded-lg shadow-2xl overflow-hidden"
     >
-      <div class="linear-image-item-bg">
+      <div class="flex-1 flex items-center linear-image-item-bg">
         <img src="/images/all_in_one_table/success_cases.webp" alt="" />
       </div>
-      <div class="flex-1 py-9 px-6 dark:bg-black bg-white">
-        <h5 class="sm:mb-12 mb-8">
-          {{ pageText.success_cases.cases_name }}
-        </h5>
-        <div class="text-gray-60">
-          {{ pageText.success_cases.cases_detail }}
+      <div class="flex-1">
+        <div class="md:p-16 p-6 dark:bg-black bg-white">
+          <h5 class="sm:mb-12 mb-8">
+            {{ pageText.success_cases.cases_name }}
+          </h5>
+          <div class="text-gray-60">
+            {{ pageText.success_cases.cases_detail }}
+          </div>
         </div>
       </div>
     </div>
