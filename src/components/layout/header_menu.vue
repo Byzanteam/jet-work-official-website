@@ -1,6 +1,6 @@
 <template>
-  <div class="relative group cursor-pointer">
-    <div class="h-12 flex items-center justify-end" @click="changeMenuState">
+  <div class="md:relative group py-1 cursor-pointer">
+    <div class="flex items-center justify-end" @click="changeMenuState">
       <div class="md:block" :class="{ hidden: isShowMenu }">
         {{ $t('page.solutions') }}
       </div>
@@ -11,12 +11,10 @@
       />
     </div>
     <div
-      class="md:group-hover:flex hidden absolute right-0 top-12 w-auto p-4 gap-5 dark:bg-[#1D1D1D] bg-white rounded-lg shadow-2xl"
+      class="md:group-hover:flex hidden absolute right-0 top-full w-auto p-4 gap-4 dark:bg-gray-850 bg-white rounded-lg shadow-2xl"
     >
-      <div v-for="(menuItem, name) in menu" :key="name">
-        <div
-          class="flex items-center text-[13px] text-gray-50 h-9 w-64 px-[10px]"
-        >
+      <div v-for="(menuItem, name) in menu" :key="name" class="w-64">
+        <div class="text-[13px] leading-5 text-gray-50 py-2 px-[10px]">
           {{ $t(name) }}
         </div>
         <RouterLink
@@ -25,7 +23,7 @@
           :to="value.link"
         >
           <div
-            class="flex items-center text-[14px] h-9 w-64 px-2 md:hover:bg-gray-03 dark:md:hover:bg-gray-08 rounded-md"
+            class="text-[14px] leading-5 py-2 px-2 md:hover:bg-gray-03 dark:md:hover:bg-gray-08 rounded-md"
           >
             {{ value.label }}
           </div>
@@ -33,11 +31,11 @@
       </div>
     </div>
     <div
-      class="md:hidden fixed top-[88px] bottom-0 left-0 right-0 pt-4 px-1 dark:bg-black bg-white"
+      class="md:hidden absolute top-full left-0 w-full h-screen pt-4 px-1 dark:bg-black bg-white"
       :class="{ hidden: !isShowMenu }"
     >
       <div v-for="(menuItem, name) in menu" :key="name" class="mb-4">
-        <div class="flex items-center text-[13px] text-gray-50 h-10 px-[14px]">
+        <div class="text-[13px] leading-5 text-gray-50 py-2 px-[14px]">
           {{ $t(name) }}
         </div>
         <RouterLink
@@ -46,7 +44,7 @@
           :to="value.link"
         >
           <div
-            class="flex items-center text-[14px] h-10 px-4"
+            class="text-[14px] leading-5 py-[10px] px-4"
             @click="changeMenuState"
           >
             {{ value.label }}
