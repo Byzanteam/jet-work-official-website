@@ -11,6 +11,7 @@ module.exports = {
           50: 'var(--tw-gray-50)',
           60: 'var(--tw-gray-60)',
           80: 'var(--tw-gray-80)',
+          850: '#171717',
         },
         'black-1': '#111',
         'brand-blue': '#115EF5',
