@@ -1,12 +1,18 @@
 <template>
-  <div class="flex flex-col px-7 py-10 rounded-lg" :class="align">
+  <div class="flex flex-col md:p-12 p-6 rounded-lg" :class="align">
     <SvgIcon v-if="item.icon" :path="item.icon" />
     <h5
+      v-if="item.title"
       :class="item.icon ? `mt-[26px] mb-4 ${textCenter}` : `mb-8 ${textCenter}`"
     >
       {{ item.title }}
     </h5>
-    <ListableText :text="item.desc" class="text-gray-60" :class="textCenter" />
+    <ListableText
+      v-if="item.desc"
+      :text="item.desc"
+      class="text-gray-60"
+      :class="textCenter"
+    />
   </div>
 </template>
 <script setup>
