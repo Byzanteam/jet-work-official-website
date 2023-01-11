@@ -20,7 +20,7 @@ module.exports = {
         'work-point': "url('/images/work_bg_point.png')",
       },
       screens: {
-        xl: '1320px',
+        lg: '1320px',
       },
     },
   },

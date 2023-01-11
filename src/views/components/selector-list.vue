@@ -4,7 +4,7 @@
       <div
         v-for="(item, index) of items"
         :key="item.title"
-        class="flex items-start p-6 gap-3 rounded-lg md:w-[384px] sm:w-[332px] w-full overflow-hidden cursor-pointer"
+        class="flex items-start p-6 gap-3 rounded-lg md:w-[384px] w-full overflow-hidden cursor-pointer"
         :class="
           chosedIndex === index
             ? 'md:linear-chosed-item-bg md:text-brand-blue'
@@ -22,13 +22,13 @@
       </div>
     </div>
 
-    <div class="md:flex-1 xl:flex-[2] md:block hidden">
+    <div class="md:flex-1 lg:flex-[2] md:block hidden">
       <img
         :src="items[chosedIndex].img"
         height="375"
         width="572"
         alt=""
-        class="xl:block xl:-my-0 xl:mx-auto"
+        class="lg:block lg:-my-0 lg:mx-auto"
       />
     </div>
   </div>

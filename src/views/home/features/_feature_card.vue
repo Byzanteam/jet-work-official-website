@@ -1,5 +1,5 @@
 <template>
-  <div class="xl:grow-[5] md:grow-[7] md:basis-0 feature-card">
+  <div class="lg:grow-[5] md:grow-[7] md:basis-0 feature-card">
     <div class="p-8">
       <img class="w-full" :src="useThemeImgUrl(image)" alt="feature-image" />
     </div>

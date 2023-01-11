@@ -1,5 +1,5 @@
 <template>
-  <ul class="flex gap-2 max-w-[450px] xl:max-w-sm w-full">
+  <ul class="flex gap-2 max-w-[450px] lg:max-w-sm w-full">
     <li
       v-for="item in length"
       :key="item"

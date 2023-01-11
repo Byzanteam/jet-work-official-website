@@ -8,7 +8,7 @@
       icon="application_icon.png"
     >
       <div
-        class="absolute top-full transform xl:-translate-y-1/4 xl:left-[90px] -translate-y-1/4 md:translate-y-[6px] md:left-0 right-0 xl:w-20 w-[3.75rem]"
+        class="absolute top-full transform lg:-translate-y-1/4 lg:left-[90px] -translate-y-1/4 md:translate-y-[6px] md:left-0 right-0 lg:w-20 w-[3.75rem]"
       >
         <img src="/images/application_arrow.svg" class="w-full" />
       </div>

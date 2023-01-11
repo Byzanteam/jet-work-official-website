@@ -1,6 +1,6 @@
 <template>
   <div class="md:grow-[7] md:basis-0 flex flex-col justify-center relative">
-    <div class="md:py-0 py-9 px-4 xl:px-16">
+    <div class="md:py-0 py-9 px-4 lg:px-16">
       <div class="p-1">
         <img
           class="w-12 h-12"
@@ -8,7 +8,7 @@
           alt="feature-icon"
         />
       </div>
-      <div class="xl:mt-10 mt-4 w-full">
+      <div class="lg:mt-10 mt-4 w-full">
         <div
           class="text-brand-blue font-medium md:text-lg md:leading-[21px] text-base leading-[19px]"
         >

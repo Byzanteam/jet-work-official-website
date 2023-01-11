@@ -88,7 +88,7 @@
       </div>
       <div class="flex-1">
         <div class="md:p-16 p-6 dark:bg-black bg-white">
-          <h5 class="sm:mb-12 mb-8">
+          <h5 class="md:mb-12 mb-8">
             {{ pageText.success_cases.cases_name }}
           </h5>
           <div class="text-gray-60">
