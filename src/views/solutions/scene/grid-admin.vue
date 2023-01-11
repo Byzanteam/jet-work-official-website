@@ -29,14 +29,18 @@
     </BlockInLayout>
     <BlockInLayout :title="pageAssets.solutions.project_function.title">
       <div class="grid md:grid-cols-2 grid-cols-1 gap-6 md:my-14 my-6">
-        <CardItem
+        <ImgCardItem
           v-for="item of cardItems"
           :key="item.title"
           :item="item"
           class="flex-1 dark:bg-gray-08 bg-gray-03"
         />
       </div>
-      <ImgCardOnly :item="cardOnlyItem" class="dark:bg-gray-08 bg-gray-03" />
+      <ImgCardItem
+        :item="cardOnlyItem"
+        direction="row"
+        class="dark:bg-gray-08 bg-gray-03"
+      />
     </BlockInLayout>
   </BlockLayout>
   <BlockLayout
@@ -70,7 +74,7 @@ import {
   BlockInLayout,
   BlockLayout,
   CardItem,
-  ImgCardOnly,
+  ImgCardItem,
   SolutionTitle,
 } from '@/views/components'
 

@@ -7,7 +7,11 @@
       class="dark:bg-gray-08 bg-gray-03"
     />
   </div>
-  <ImgCardOnly :item="cardOnlyItem" class="mt-6 dark:bg-gray-08 bg-gray-03" />
+  <ImgCardItem
+    :item="cardOnlyItem"
+    direction="row"
+    class="mt-6 dark:bg-gray-08 bg-gray-03"
+  />
 </template>
 
 <script>
@@ -18,7 +22,7 @@ export default {
 <script setup>
 import { get } from 'lodash-es'
 
-import { ImgCardItem, ImgCardOnly } from '@/views/components'
+import { ImgCardItem } from '@/views/components'
 
 const pageText = {
   description: '',

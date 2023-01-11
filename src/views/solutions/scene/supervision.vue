@@ -51,8 +51,9 @@
           class="dark:bg-gray-08 bg-gray-03"
         />
       </div>
-      <ImgCardOnly
-        class="pr-0 md:pb-0 dark:bg-gray-08 bg-gray-03"
+      <ImgCardItem
+        class="md:pb-0 dark:bg-gray-08 bg-gray-03"
+        direction="row"
         :item="cardOnlyItem"
       />
     </BlockInLayout>
@@ -94,7 +95,6 @@ import {
   BlockLayout,
   CardItem,
   ImgCardItem,
-  ImgCardOnly,
   SolutionTitle,
 } from '@/views/components'
 
