@@ -35,7 +35,29 @@
     padding="py-[72px]"
     class="dark:bg-gray-08 bg-gray-03"
   >
-    <ImgCardOnly :item="cardItem" class="ddark:bg-gray-10 bg-white" />
+    <div
+      class="flex md:flex-row flex-col items-center rounded-lg dark:bg-gray-10 bg-white"
+    >
+      <div class="md:order-1 order-2 md:py-[72px] md:px-24 p-12">
+        <h5 class="md:mb-9 mb-6 font-semibold">{{ cardItem.title }}</h5>
+        <ul class="list-disc list-inside">
+          <li
+            v-for="itemValue of cardItem.desc.split('- ')"
+            :key="itemValue"
+            class="mb-4"
+          >
+            {{ itemValue }}
+          </li>
+        </ul>
+      </div>
+      <div class="md:order-2 order-1 flex items-center md:p-0 pt-6 pl-6">
+        <img
+          :src="cardItem.img"
+          alt=""
+          class="h-[368px] w-auto object-cover object-left"
+        />
+      </div>
+    </div>
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.platform.message_manager.block_title_three')"
@@ -52,7 +74,6 @@ import {
   BlockLayout,
   SelectorList,
   CardItem,
-  ImgCardOnly,
   SolutionTitle,
 } from '@/views/components'
 
