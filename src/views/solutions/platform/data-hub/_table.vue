@@ -57,29 +57,29 @@ const pageText = {
       description: '部分字段支持编辑',
     },
     config: {
-      img: '/images/data_hub/table_config.webp',
+      image: '/images/data_hub/table_config.webp',
       title: '识别码配置',
       description:
         '每张表都有唯一识别码，支持自动生成亦可自定义，为接口生成提供支撑',
     },
     share: {
-      img: '/images/data_hub/table_share.webp',
+      image: '/images/data_hub/table_share.webp',
       title: '表接口分享',
       description: '支持一键分享接口，无需代码开发',
     },
     accept: {
-      img: '/images/data_hub/table_accept.webp',
+      image: '/images/data_hub/table_accept.webp',
       title: '数据接收',
       description: '无需字段匹配，数据接受灵活性强',
     },
     relation: {
-      img: '/images/data_hub/table_relation.webp',
+      image: '/images/data_hub/table_relation.webp',
       title: '事件关联',
       description:
         '可将表与流程事件绑定， 预警数据接收后可自动触发事件流程，形成事件闭环。',
     },
     list: {
-      img: '/images/data_hub/table_list.webp',
+      image: '/images/data_hub/table_list.webp',
       title: '列表页',
       description: '支持表关键词模糊搜索',
     },
@@ -94,22 +94,22 @@ const pageText = {
     skylark: {
       title: '添加 Skylark 流程事件',
       description: '可与表联动形成处置闭环',
-      img: '/images/data_hub/event_skylark.webp',
+      image: '/images/data_hub/event_skylark.webp',
     },
     database: {
       title: '添加数据库事件',
       description: '',
-      img: '/images/data_hub/event_database.webp',
+      image: '/images/data_hub/event_database.webp',
     },
     data_push: {
       title: '数据推送',
       description: '可与接口管理联动，选择需推送的接口，快速准确推送',
-      img: '/images/data_hub/event_data_push.webp',
+      image: '/images/data_hub/event_data_push.webp',
     },
     kafka: {
       title: 'kafka',
       description: '',
-      img: '/images/data_hub/event_kafka.webp',
+      image: '/images/data_hub/event_kafka.webp',
     },
     edit: {
       title: '事件详情编辑',

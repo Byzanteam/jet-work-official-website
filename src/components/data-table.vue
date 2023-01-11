@@ -17,11 +17,11 @@
           class="min-w-[250px] p-3 text-gray-60"
         >
           <ul v-if="Array.isArray(item)" class="list-disc list-inside">
-            <li v-for="liText of item" :key="liText" class="mb-4">
+            <li v-for="liText of item" :key="liText" class="mb-2">
               {{ liText }}
             </li>
           </ul>
-          <div v-else>
+          <div v-else class="flex items-center justify-center w-full">
             {{ item }}
           </div>
         </td>

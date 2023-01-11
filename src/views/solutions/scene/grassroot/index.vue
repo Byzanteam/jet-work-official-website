@@ -74,18 +74,20 @@
     <div
       class="flex md:flex-row flex-col rounded-lg shadow-2xl overflow-hidden"
     >
-      <div class="flex-1 linear-image-item-bg">
+      <div class="flex-1 flex items-center linear-image-item-bg">
         <img src="/images/grassroot/success_cases.webp" alt="" />
       </div>
-      <div class="flex-1 p-16 dark:bg-black bg-white">
-        <h5>
-          {{ pageText.success_cases.cases_name }}
-        </h5>
-        <div v-for="item of successCaseDescItems" :key="item.title">
-          <div class="text-[20px] font-semibold mb-2 mt-6">
-            {{ item.title }}
+      <div class="flex-1">
+        <div class="md:p-16 p-6 dark:bg-black bg-white">
+          <h5>
+            {{ pageText.success_cases.cases_name }}
+          </h5>
+          <div v-for="item of successCaseDescItems" :key="item.title">
+            <div class="text-[20px] font-semibold mb-2 mt-6">
+              {{ item.title }}
+            </div>
+            <div class="text-gray-60">{{ item.desc }}</div>
           </div>
-          <div class="text-gray-60">{{ item.desc }}</div>
         </div>
       </div>
     </div>
