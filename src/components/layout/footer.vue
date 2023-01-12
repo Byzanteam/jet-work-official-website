@@ -1,8 +1,8 @@
 <template>
   <footer class="bg-gray-03 dark:bg-gray-08">
-    <div class="py-10 md:py-[54px] xl:py-14 content-container">
+    <div class="py-10 md:py-[54px] lg:py-14 content-container">
       <div
-        class="flex flex-col xl:flex-row items-center justify-between py-2.5 px-6 gap-6"
+        class="flex flex-col lg:flex-row items-center justify-between py-2.5 px-6 gap-6"
       >
         <div class="w-[110px]">
           <img
@@ -12,7 +12,7 @@
           />
         </div>
         <div
-          class="text-gray-80 text-sm font-medium mt-[34px] xl:mt-0 text-center md:text-center xl:text-left"
+          class="text-gray-80 text-sm font-medium mt-[34px] lg:mt-0 text-center md:text-center lg:text-left"
         >
           <div>
             {{ $t('page.home.copyright') }}

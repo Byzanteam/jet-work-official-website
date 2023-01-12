@@ -60,7 +60,7 @@
 
 @layer components {
   .content-container {
-    @apply max-w-[1320px] m-auto px-5 md:px-10 xl:px-[3.75rem];
+    @apply max-w-[1320px] m-auto px-5 md:px-10 lg:px-[3.75rem];
   }
 
   .feature-card {

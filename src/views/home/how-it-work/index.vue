@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-work-point xl:py-[120px] py-16 content-container">
+  <div class="bg-work-point lg:py-[120px] py-16 content-container">
     <SectionTitle
       :title="$t('page.home.how_it_work')"
       :description="$t('page.home.how_it_work.description')"
