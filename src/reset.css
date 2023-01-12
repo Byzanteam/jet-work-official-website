@@ -156,7 +156,7 @@
   }
 
   .decorative-border {
-    @apply relative mb-20 border-b-2;
+    @apply relative mb-20 lg:border-b-2;
     border-image: linear-gradient(
         to right,
         #ffffff,
@@ -165,10 +165,17 @@
       )
       1;
   }
-  .decorative-border-item {
+  .decorative-border-item--lg {
     @apply relative border-r-2 last:border-r-0 decorative-border-image--down;
-    @apply first:decorative-border-shadow--first last:after:decorative-border-shadow--last;
-    @apply after:absolute after:contents after:top-full after:left-0 after:-right-[2px] after:h-20;
+    @apply lg:last:after:decorative-border-shadow--last;
+    @apply after:absolute after:contents after:left-0 after:-right-[2px] lg:after:h-20;
     @apply last:after:border-r-0 after:border-r-2 after:decorative-border-image--up;
+  }
+  .decorative-border-item--md {
+    @apply relative;
+    @apply first:decorative-border-shadow--first;
+    @apply first:border-r-2 first:border-b-2 lg:first:border-b-0 first:decorative-border-image--down;
+    @apply first:after:absolute after:top-full md:first:after:left-full lg:first:after:left-[2px] first:after:w-full first:after:border-b-2 lg:first:after:border-b-0 md:first:after:decorative-border-image--down lg:first:after:decorative-border-image--up;
+    @apply lg:first:before:hidden first:before:absolute first:before:top-full first:before:left-full first:before:h-full first:before:border-r-2 first:before:decorative-border-image--up;
   }
 }
