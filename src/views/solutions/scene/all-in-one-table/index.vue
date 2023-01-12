@@ -24,7 +24,7 @@
     padding="py-[72px]"
     class="dark:linear-block-item-bg--dark linear-block-item-bg"
   >
-    <div class="flex md:flex-row flex-col gap-6">
+    <div class="grid gap-6 lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
       <CardItem
         v-for="item of solutionValueItems"
         :key="item.desc"
@@ -58,7 +58,7 @@
     padding="py-[72px]"
     class="dark:bg-gray-08 bg-gray-03"
   >
-    <div class="flex md:flex-row flex-col gap-6 mb-[72px]">
+    <div class="grid gap-6 lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
       <CardItem
         v-for="item of projectValueCardItmes"
         :key="item.title"
@@ -71,7 +71,7 @@
     :title="$t('page.solutions.scene.project_advantages')"
     padding="md:pt-[104px] md:pb-32 pt-16 pb-[88px]"
   >
-    <div class="grid gap-6 md:grid-cols-2 grid-cols-1">
+    <div class="grid gap-6 lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
       <CardItem v-for="item of itemListItems" :key="item.title" :item="item" />
     </div>
   </BlockLayout>

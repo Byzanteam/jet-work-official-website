@@ -24,14 +24,19 @@
     padding="py-[72px]"
     class="dark:bg-gray-08 bg-gray-03"
   >
-    <div class="flex md:flex-row flex-col gap-6">
+    <div class="grid gap-6 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
       <ImgCardItem
         v-for="item of cardsItems"
         :key="item.title"
         :item="item"
-        class="dark:bg-gray-10 bg-white"
+        class="dark:bg-gray-10 bg-white last:hidden last:lg:block"
       />
     </div>
+    <ImgCardItem
+      :item="cardsItems.at(-1)"
+      class="mt-6 lg:hidden dark:bg-gray-10 bg-white"
+      direction="row"
+    />
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.platform.cms.block_title_three')"
