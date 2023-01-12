@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full md:mb-12 mb-6 text-gray-60">
-    <div class="flex overflow-x-scroll">
+    <div class="flex lg:justify-around overflow-x-scroll">
       <div
         v-for="slot of labelAndComponents"
         :key="slot.label"
