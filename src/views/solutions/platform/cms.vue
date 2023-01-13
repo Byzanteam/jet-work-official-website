@@ -87,13 +87,13 @@ const pageAssets = {
     template: {
       title: '模板自定义',
       descriptions: '满足不同客户不同审美需求。',
-      image: '/images/cms/layout_template.png',
+      image: '/images/cms/layout_template.webp',
     },
     configable: {
       title: '灵活配置',
       descriptions:
         '页面分类、文章内容可支持关联范围，根据权限不同展示不同内容。',
-      image: '/images/cms/layout_configable.png',
+      image: '/images/cms/layout_configable.webp',
     },
     quick: {
       title: '快速搭建',
@@ -111,7 +111,7 @@ const pageAssets = {
     },
     magnetism: {
       icon: '/images/cms/magnetism.svg',
-      image: '/images/cms/magnetism.webp',
+      image: '/images/cms/magnetism.png',
       title: '增加用户粘性',
       description: '打造客户个性主题元素，让用户更容易记住企业和品牌文化',
     },

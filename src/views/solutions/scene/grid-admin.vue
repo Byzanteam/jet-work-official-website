@@ -25,7 +25,7 @@
     class="dark:linear-block-item-bg--dark linear-block-item-bg"
   >
     <BlockInLayout :title="pageAssets.solutions.flow.title">
-      <img src="/images/grid_admin/flow.webp" alt="" />
+      <img src="/images/grid_admin/flow.png" alt="" />
     </BlockInLayout>
     <BlockInLayout :title="pageAssets.solutions.project_function.title">
       <div class="grid md:grid-cols-2 grid-cols-1 gap-6 md:my-14 my-6">
