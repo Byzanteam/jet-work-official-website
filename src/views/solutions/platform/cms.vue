@@ -8,15 +8,15 @@
     :title="$t('page.solutions.platform.cms.block_title_one')"
     padding="pt-[105px] pb-[5px]"
   >
-    <div class="flex flex-col">
-      <div class="flex md:flex-row flex-col flex-wrap md:decorative-border">
-        <CardItem
-          v-for="item of itemListItems"
-          :key="item.title"
-          :item="item"
-          class="flex-1 md:decorative-border-item"
-        />
-      </div>
+    <div
+      class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:decorative-border"
+    >
+      <CardItem
+        v-for="item of itemListItems"
+        :key="item.title"
+        :item="item"
+        class="md:decorative-border-item--md lg:decorative-border-item--lg"
+      />
     </div>
   </BlockLayout>
   <BlockLayout
@@ -24,14 +24,19 @@
     padding="py-[72px]"
     class="dark:bg-gray-08 bg-gray-03"
   >
-    <div class="flex md:flex-row flex-col gap-6">
+    <div class="grid gap-6 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
       <ImgCardItem
         v-for="item of cardsItems"
         :key="item.title"
         :item="item"
-        class="dark:bg-gray-10 bg-white"
+        class="dark:bg-gray-10 bg-white last:hidden last:lg:block"
       />
     </div>
+    <ImgCardItem
+      :item="cardsItems.at(-1)"
+      class="mt-6 lg:hidden dark:bg-gray-10 bg-white"
+      direction="row"
+    />
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.platform.cms.block_title_three')"

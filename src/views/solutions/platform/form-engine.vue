@@ -8,15 +8,15 @@
     :title="$t('page.solutions.platform.form_engine.block_title_one')"
     padding="pt-[105px] pb-[5px]"
   >
-    <div class="flex flex-col">
-      <div class="flex md:flex-row flex-col flex-wrap md:decorative-border">
-        <CardItem
-          v-for="item of itemListItems"
-          :key="item.title"
-          :item="item"
-          class="flex-1 md:decorative-border-item"
-        />
-      </div>
+    <div
+      class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:decorative-border"
+    >
+      <CardItem
+        v-for="item of itemListItems"
+        :key="item.title"
+        :item="item"
+        class="md:decorative-border-item--md lg:decorative-border-item--lg"
+      />
     </div>
   </BlockLayout>
   <BlockLayout
@@ -29,7 +29,7 @@
         v-for="item of cardsItems"
         :key="item.title"
         :item="item"
-        class="dark:bg-gray-10 bg-white"
+        class="flex-1 dark:bg-gray-10 bg-white"
       />
     </div>
   </BlockLayout>
