@@ -31,7 +31,7 @@ const pageText = {
     title: '双系统结合',
     description:
       '综窗系统和掌上办系统可以完全结合，用一套逻辑满足线上线下的业务办理，更方便工作人员操作使用和数据汇集。',
-    image: '/images/approval/synthesis_twin.png',
+    image: '/images/approval/synthesis_twin.webp',
   },
 }
 

@@ -99,17 +99,17 @@ const pageText = {
     database: {
       title: '添加数据库事件',
       description: '',
-      image: '/images/data_hub/event_database.webp',
+      image: '/images/data_hub/event_database.png',
     },
     data_push: {
       title: '数据推送',
       description: '可与接口管理联动，选择需推送的接口，快速准确推送',
-      image: '/images/data_hub/event_data_push.webp',
+      image: '/images/data_hub/event_data_push.png',
     },
     kafka: {
       title: 'kafka',
       description: '',
-      image: '/images/data_hub/event_kafka.webp',
+      image: '/images/data_hub/event_kafka.png',
     },
     edit: {
       title: '事件详情编辑',

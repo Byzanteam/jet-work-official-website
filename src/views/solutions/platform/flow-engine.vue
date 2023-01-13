@@ -89,7 +89,7 @@ const pageAssets = {
       title: '管理端',
       descriptions:
         '丰富的节点配置属性，支撑复杂或特殊流程搭建- 灵活可“拖拽式”的构建流程- 即编辑即上线的操作模式- 低代码实现流程与其他应用集成- 可根据场景需要定制机器节点替代人工审核工作',
-      image: '/images/flow_engine/configable_admin.webp',
+      image: '/images/flow_engine/configable_admin.png',
     },
     client: {
       title: '用户端',

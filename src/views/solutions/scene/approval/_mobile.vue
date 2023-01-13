@@ -67,7 +67,7 @@ const pageText = {
   },
   component: {
     title: '“一件事一次办”服务模块',
-    image: '/images/approval/mobile_component.webp',
+    image: '/images/approval/mobile_component.png',
     description:
       '通过建设一件事一次办服务模块对主题式、套餐式服务事项进行配置，通过梳理不同的基础事项进行组合归类，实现多个事项一次性办理，减少申请人跑动现场的次数和提交重复的材料。',
   },

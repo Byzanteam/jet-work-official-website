@@ -84,7 +84,7 @@ const pageAssets = {
       title: '管理端',
       descriptions:
         '丰富字段种类，满足用户不同场景表单构建- 灵活可“拖拽式”的构建表单- 即编辑即上线的操作模式- 低代码实现表单与其他应用集成',
-      image: '/images/form_engine/multi_fields_admin.webp',
+      image: '/images/form_engine/multi_fields_admin.png',
     },
     client: {
       title: '用户端',
@@ -102,7 +102,7 @@ const pageAssets = {
     },
     improve_efficiency: {
       icon: '/images/form_engine/improve_efficiency.svg',
-      image: '/images/form_engine/improve_efficiency.webp',
+      image: '/images/form_engine/improve_efficiency.png',
       title: '工作提效',
       description:
         '可快速录入和批量导入数据，为一线员工提速赋能，更好的支撑后续数据分析',

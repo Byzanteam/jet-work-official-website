@@ -42,7 +42,7 @@ const pageText = {
     title: '前置库对接',
     description:
       '三级政务服务平台会将所有数据存储在一个前置库中，设置好字段和编码，由省一体化平台来抓取数据，完成数据对接。',
-    image: '/images/approval/data_save_advance_concat.webp',
+    image: '/images/approval/data_save_advance_concat.png',
   },
 }
 

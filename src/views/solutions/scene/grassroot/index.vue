@@ -2,7 +2,7 @@
   <SolutionTitle
     :solution="$t('page.solutions.scene')"
     :title="$t('page.solutions.scene.grassroot')"
-    img="/images/grassroot/title_img.webp"
+    img="/images/grassroot/title_img.png"
   />
   <BlockLayout
     :title="$t('page.solutions.scene.questions')"

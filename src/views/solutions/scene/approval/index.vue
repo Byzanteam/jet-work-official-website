@@ -169,20 +169,20 @@ const pageText = {
   },
   project_function: {
     authority: {
-      image: '/images/approval/function_authority.webp',
+      image: '/images/approval/function_authority.png',
       icon: '/images/approval/authority.svg',
       title: '组织权限配置',
       description: '组织架构 Excel 一键导入，权限分配，实现数字孪生',
     },
     page: {
-      image: '/images/approval/function_page.webp',
+      image: '/images/approval/function_page.png',
       icon: '/images/approval/page.svg',
       title: '页面填报配置',
       description:
         '政务服务主要是以群众/企业进行发起，低代码平台通过快速搭建前端填报页面。根据业务特性，无需代码直接生成',
     },
     flow: {
-      image: '/images/approval/function_flow.webp',
+      image: '/images/approval/function_flow.png',
       icon: '/images/approval/flow.svg',
       title: '流程节点配置',
       description:

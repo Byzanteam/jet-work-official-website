@@ -126,7 +126,7 @@ const cardItem = {
 const selectorItems = ['quick', 'improve'].map(value => ({
   title: get(pageText, `users.${value}.title`),
   desc: get(pageText, `users.${value}.description`),
-  icon: `/images/message_manager/${value}.svg`,
-  img: `/images/message_manager/${value}.webp`,
+  icon: get(pageText, `users.${value}.icon`),
+  img: get(pageText, `users.${value}.image`),
 }))
 </script>
