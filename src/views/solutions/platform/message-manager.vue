@@ -25,9 +25,9 @@
     class="dark:bg-gray-08 bg-gray-03"
   >
     <div
-      class="flex md:flex-row flex-col items-center rounded-lg dark:bg-gray-10 bg-white"
+      class="flex md:flex-row flex-col items-center w-full rounded-lg dark:bg-gray-10 bg-white"
     >
-      <div class="md:order-1 order-2 md:py-[72px] md:px-24 p-12">
+      <div class="md-flex-[4] md:order-1 order-2 md:py-[72px] md:px-24 p-12">
         <h5 class="md:mb-9 mb-6 font-semibold">{{ cardItem.title }}</h5>
         <ul class="list-disc list-inside">
           <li
@@ -39,7 +39,9 @@
           </li>
         </ul>
       </div>
-      <div class="md:order-2 order-1 flex items-center md:p-0 pt-6 pl-6">
+      <div
+        class="md-flex-[6] md:order-2 order-1 flex items-center md:p-0 pt-6 pl-6"
+      >
         <img
           :src="cardItem.img"
           alt=""

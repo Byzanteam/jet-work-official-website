@@ -29,7 +29,7 @@
         v-for="item of cardsItems"
         :key="item.title"
         :item="item"
-        class="dark:bg-gray-10 bg-white last:hidden last:lg:block"
+        class="dark:bg-gray-10 bg-white last:hidden last:lg:flex"
       />
     </div>
     <ImgCardItem
