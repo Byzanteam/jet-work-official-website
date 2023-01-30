@@ -183,7 +183,7 @@
   .decorative-border-item--lg {
     @apply relative border-r-2 last:border-r-0 decorative-border-linear-down;
     @apply lg:last:after:decorative-border-shadow--last;
-    @apply after:absolute after:contents after:left-0 after:-right-[2px] lg:after:h-20;
+    @apply after:absolute after:block after:left-0 after:-right-[2px] lg:after:h-20;
     @apply last:after:border-r-0 after:border-r-2 after:decorative-border-linear-up;
   }
   .decorative-border-item--md {
