@@ -21,6 +21,7 @@
           v-for="value of menuItem"
           :key="value.label"
           :to="value.link"
+          class="cursor-default"
         >
           <div
             class="text-[14px] leading-5 py-2 px-2 md:hover:bg-gray-03 dark:md:hover:bg-gray-08 rounded-md"
