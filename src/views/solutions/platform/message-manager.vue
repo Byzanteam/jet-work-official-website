@@ -9,7 +9,7 @@
     padding="pt-[105px] pb-[5px]"
   >
     <div
-      class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:decorative-border"
+      class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:decorative-border"
     >
       <CardItem
         v-for="item of itemListItems"

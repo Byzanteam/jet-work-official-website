@@ -1,5 +1,5 @@
 <template>
-  <BlockLayout :block-desc="pageText.description">
+  <BlockLayout :block-desc="pageText.description" padding="px-0">
     <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
       <ImgCardItem
         v-for="item of cardItems"
