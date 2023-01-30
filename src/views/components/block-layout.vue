@@ -11,7 +11,7 @@
         </h3>
         <div
           v-if="blockDesc"
-          class="lg:max-w-[588px] max-w-[450px] mb-14 text-gray-60 text-center"
+          class="lg:max-w-[588px] max-w-[450px] mb-14 text-gray-60 lg:text-xl md:text-lg text-sm text-center"
         >
           {{ blockDesc }}
         </div>
