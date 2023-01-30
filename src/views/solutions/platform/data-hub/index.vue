@@ -190,7 +190,7 @@ const pageAssets = {
 
 const questionCardItems = ['professional', 'cost', 'disorderly_data'].map(
   key => ({
-    icon: get(pageAssets, `questions.${key}.title`),
+    icon: get(pageAssets, `questions.${key}.icon`),
     title: get(pageAssets, `questions.${key}.title`),
     desc: get(pageAssets, `questions.${key}.description`),
   }),
