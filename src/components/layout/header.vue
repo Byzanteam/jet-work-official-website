@@ -10,7 +10,7 @@
           @click="isShowMenuOnMobile = false"
         />
       </RouterLink>
-      <HeaderMenu v-model:isShowMenu="isShowMenuOnMobile" class="flex-1" />
+      <HeaderMenu v-model:isShowMenu="isShowMenuOnMobile" />
     </div>
   </header>
 </template>
