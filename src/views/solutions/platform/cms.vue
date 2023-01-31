@@ -9,7 +9,7 @@
     padding="pt-[105px] pb-[5px]"
   >
     <div
-      class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:decorative-border"
+      class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:decorative-border"
     >
       <CardItem
         v-for="item of itemListItems"
@@ -29,7 +29,7 @@
         v-for="item of cardsItems"
         :key="item.title"
         :item="item"
-        class="dark:bg-gray-10 bg-white last:hidden last:lg:block"
+        class="dark:bg-gray-10 bg-white last:hidden last:lg:flex"
       />
     </div>
     <ImgCardItem

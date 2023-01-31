@@ -24,7 +24,7 @@
     padding="py-[72px]"
     class="dark:linear-block-item-bg--dark linear-block-item-bg"
   >
-    <div class="grid gap-6 lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
+    <div class="grid gap-6 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
       <CardItem
         v-for="item of solutionValueItems"
         :key="item.desc"

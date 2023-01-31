@@ -1,5 +1,5 @@
 <template>
-  <BlockLayout :block-desc="desc">
+  <BlockLayout :block-desc="desc" padding="px-0">
     <img src="/images/approval/visualized_1.webp" alt="" class="mb-8" />
     <img src="/images/approval/visualized_2.webp" alt="" />
   </BlockLayout>
