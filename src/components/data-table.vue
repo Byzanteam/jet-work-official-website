@@ -2,7 +2,9 @@
   <table class="border border-gray-08 rounded-lg">
     <thead class="dark:bg-gray-08 bg-gray-03">
       <tr>
-        <th v-for="head of headers" :key="head" class="p-3">{{ head }}</th>
+        <th v-for="head of headers" :key="head" class="p-3 text-left">
+          {{ head }}
+        </th>
       </tr>
     </thead>
     <tbody>
@@ -14,14 +16,14 @@
         <td
           v-for="item of content"
           :key="item"
-          class="min-w-[250px] p-3 text-gray-60"
+          class="min-w-[200px] p-3 text-gray-60"
         >
           <ul v-if="Array.isArray(item)" class="list-disc list-inside">
             <li v-for="liText of item" :key="liText" class="mb-2">
               {{ liText }}
             </li>
           </ul>
-          <div v-else class="flex items-center justify-center w-full">
+          <div v-else class="w-full">
             {{ item }}
           </div>
         </td>
