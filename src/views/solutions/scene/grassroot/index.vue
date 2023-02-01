@@ -68,7 +68,7 @@
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.scene.success_cases')"
-    padding="py-[72px] md:mb-[150px]"
+    padding="py-[72px]"
     class="dark:linear-block-item-bg--dark linear-block-item-bg"
   >
     <div
@@ -78,7 +78,7 @@
         <img src="/images/grassroot/success_cases.webp" alt="" />
       </div>
       <div class="flex-1">
-        <div class="md:p-16 p-6 dark:bg-black bg-white">
+        <div class="lg:p-16 p-6 dark:bg-black bg-white">
           <h5>
             {{ pageText.success_cases.cases_name }}
           </h5>

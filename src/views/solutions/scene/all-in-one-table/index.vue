@@ -87,7 +87,7 @@
         <img src="/images/all_in_one_table/success_cases.webp" alt="" />
       </div>
       <div class="flex-1">
-        <div class="md:p-16 p-6 dark:bg-black bg-white">
+        <div class="lg:p-16 p-6 dark:bg-black bg-white">
           <h5 class="md:mb-12 mb-8">
             {{ pageText.success_cases.cases_name }}
           </h5>
