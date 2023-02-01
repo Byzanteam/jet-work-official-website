@@ -54,7 +54,7 @@
         v-for="item of cardItems"
         :key="item.title"
         :item="item"
-        class="flex-1 md:p-24 p-9 dark:bg-gray-10 bg-white"
+        class="flex-1 lg:p-24 p-9 dark:bg-gray-10 bg-white"
       />
     </div>
   </BlockLayout>
