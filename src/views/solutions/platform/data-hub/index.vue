@@ -26,9 +26,6 @@
     padding="pt-[72px] pb-9"
     class="dark:linear-block-item-bg--dark linear-block-item-bg"
   >
-    <BlockInLayout :title="pageAssets.solutions.flow.title">
-      <img src="/images/data_hub/flow.png" alt="" />
-    </BlockInLayout>
     <BlockInLayout :title="pageAssets.solutions.platform_build">
       <img src="/images/data_hub/platform_build.webp" />
     </BlockInLayout>
@@ -114,24 +111,6 @@ const pageAssets = {
   solutions: {
     description:
       'DataHub 整合了很多已有的技术， 其底层包含多方，如数据仓库 （DataHouse）、接口自动对（Interface）、事件中心、数据转换器 （DataSwitcher）、消息队列自动对接 （Kafka）、前端操作界面等等 ， 其本身并不“生产”任何数据，同时自身也不需要“消费”任何的数据，数据来源于外部，并且开放给外部应用， 其不仅可以很好的组织和管理数据，也可以更好的使业务落地支持管理决策。',
-    flow: {
-      title: '业务流程',
-      admin: {
-        title: '管理员',
-        action: '网格划分',
-        contents: '数据录入- 地址划分- 网格员分派',
-      },
-      grid_user: {
-        title: '网格员',
-        action: '数据采集',
-        contents: '查看走访目标- 一标三实走访- 类型人口走访',
-      },
-      charge: {
-        title: '网格负责人',
-        action: '数据总览',
-        contents: '查看辖区数据- 查看走访数据- 主题数据库汇总- 数据分发',
-      },
-    },
     platform_build: '平台构建',
     project_function: {
       title: '产品功能',
