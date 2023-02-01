@@ -1,11 +1,11 @@
 <template>
   <BlockLayout :block-desc="pageText.description" padding="px-0">
-    <div class="flex gap-6">
+    <div class="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-6">
       <CardItem
         v-for="item of valueCardItems"
         :key="item.title"
         :item="item"
-        class="flex-1 md:px-6 dark:bg-gray-08 bg-gray-03"
+        class="md:last:col-span-2 md:px-6 dark:bg-gray-08 bg-gray-03"
       />
     </div>
   </BlockLayout>
