@@ -4,7 +4,7 @@
       <div
         v-for="(item, index) of items"
         :key="item.title"
-        class="rounded-lg w-full md:bg-transparent bg-gray-03 dark:bg-gray-08 overflow-hidden cursor-default"
+        class="rounded-lg w-full md:bg-transparent bg-gray-03 dark:bg-gray-08 overflow-hidden cursor-pointer"
         @click="() => choseBlock(index)"
       >
         <div
