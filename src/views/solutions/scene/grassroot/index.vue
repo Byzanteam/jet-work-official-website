@@ -78,7 +78,7 @@
         <img src="/images/grassroot/success_cases.webp" alt="" />
       </div>
       <div class="flex-1">
-        <div class="lg:p-16 p-6 dark:bg-black bg-white">
+        <div class="h-full lg:p-16 p-6 dark:bg-gray-10 bg-white">
           <h5>
             {{ pageText.success_cases.cases_name }}
           </h5>

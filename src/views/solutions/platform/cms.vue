@@ -6,7 +6,7 @@
   />
   <BlockLayout
     :title="$t('page.solutions.platform.cms.block_title_one')"
-    padding="pt-[105px] pb-[5px]"
+    padding="lg:pt-[105px] pt-16 pb-[72px]"
   >
     <div
       class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:decorative-border"
