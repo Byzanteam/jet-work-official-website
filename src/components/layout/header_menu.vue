@@ -1,5 +1,5 @@
 <template>
-  <div class="md:relative group py-1 cursor-default">
+  <div class="md:relative group py-1 cursor-pointer">
     <div class="flex items-center justify-end" @click="changeMenuState">
       <div class="md:block" :class="{ hidden: isShowMenu }">
         {{ $t('page.solutions') }}
@@ -21,7 +21,6 @@
           v-for="value of menuItem"
           :key="value.label"
           :to="value.link"
-          class="cursor-default"
         >
           <div
             class="text-[14px] leading-5 py-2 px-2 md:hover:bg-gray-03 dark:md:hover:bg-gray-08 rounded-md"

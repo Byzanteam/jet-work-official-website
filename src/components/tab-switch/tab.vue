@@ -4,7 +4,7 @@
       <div
         v-for="slot of labelAndComponents"
         :key="slot.label"
-        class="flex-shrink-0 w-max py-3 md:mx-16 mx-9 cursor-default"
+        class="flex-shrink-0 w-max py-3 md:mx-16 mx-9 cursor-pointer"
         :class="
           slot.label === currentLabel
             ? 'text-brand-blue border-b-2 border-b-brand-blue'

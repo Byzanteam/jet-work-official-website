@@ -54,7 +54,7 @@
         v-for="item of cardItems"
         :key="item.title"
         :item="item"
-        class="flex-1 md:p-24 p-9 dark:bg-gray-10 bg-white"
+        class="flex-1 lg:p-24 p-9 dark:bg-gray-10 bg-white"
       />
     </div>
   </BlockLayout>
@@ -68,7 +68,7 @@
   </BlockLayout>
   <BlockLayout
     :title="$t('page.solutions.scene.success_cases')"
-    padding="py-[72px] md:mb-[150px]"
+    padding="py-[72px]"
     class="dark:linear-block-item-bg--dark linear-block-item-bg"
   >
     <div
@@ -78,7 +78,7 @@
         <img src="/images/grassroot/success_cases.webp" alt="" />
       </div>
       <div class="flex-1">
-        <div class="md:p-16 p-6 dark:bg-black bg-white">
+        <div class="h-full lg:p-16 p-6 dark:bg-gray-10 bg-white">
           <h5>
             {{ pageText.success_cases.cases_name }}
           </h5>

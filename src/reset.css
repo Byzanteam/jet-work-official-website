@@ -138,10 +138,10 @@
   }
 
   .decorative-border-linear-down--light {
-    border-image: linear-gradient(#fff 40%, rgb(217, 217, 217)) 1;
+    border-image: linear-gradient(#fff 20%, rgb(217, 217, 217)) 1;
   }
   .decorative-border-linear-down--dark {
-    border-image: linear-gradient(#000 40%, rgb(38, 38, 38)) 1;
+    border-image: linear-gradient(#000 20%, rgb(38, 38, 38)) 1;
   }
   .decorative-border-linear-down {
     @apply dark:decorative-border-linear-down--dark decorative-border-linear-down--light;
@@ -194,6 +194,6 @@
     @apply first:decorative-border-shadow--first;
     @apply first:border-r-2 first:border-b-2 lg:first:border-b-0 first:decorative-border-linear-down;
     @apply first:after:absolute after:top-full md:first:after:left-full lg:first:after:left-[2px] first:after:w-full first:after:border-b-2 lg:first:after:border-b-0 md:first:after:decorative-border-linear-down lg:first:after:decorative-border-linear-up;
-    @apply lg:first:before:hidden first:before:absolute first:before:top-full first:before:left-full first:before:h-full first:before:border-r-2 first:before:decorative-border-linear-up;
+    @apply lg:first:before:hidden first:before:absolute first:before:top-full first:before:left-full first:before:h-[80%] first:before:border-r-2 first:before:decorative-border-linear-up;
   }
 }

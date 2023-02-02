@@ -73,13 +73,13 @@ const pageText = {
       description: '无需字段匹配，数据接受灵活性强',
     },
     relation: {
-      image: '/images/data_hub/table_relation.webp',
+      image: '/images/data_hub/table_list.webp',
       title: '事件关联',
       description:
         '可将表与流程事件绑定， 预警数据接收后可自动触发事件流程，形成事件闭环。',
     },
     list: {
-      image: '/images/data_hub/table_list.webp',
+      image: '/images/data_hub/table_relation.webp',
       title: '列表页',
       description: '支持表关键词模糊搜索',
     },

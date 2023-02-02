@@ -6,7 +6,7 @@
   />
   <BlockLayout
     :title="$t('page.solutions.platform.form_engine.block_title_one')"
-    padding="pt-[105px] pb-[5px]"
+    padding="lg:pt-[105px] pt-16 pb-[72px]"
   >
     <div
       class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:decorative-border"
