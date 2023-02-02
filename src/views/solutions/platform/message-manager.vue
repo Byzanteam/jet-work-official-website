@@ -25,9 +25,11 @@
     class="dark:bg-gray-08 bg-gray-03"
   >
     <div
-      class="flex md:flex-row flex-col items-center w-full rounded-lg dark:bg-gray-10 bg-white"
+      class="flex md:flex-row flex-col md:items-center items-start w-full rounded-lg dark:bg-gray-10 bg-white"
     >
-      <div class="md-flex-[4] md:order-1 order-2 md:py-[72px] md:px-24 p-12">
+      <div
+        class="md:flex-[4] md:order-1 order-2 lg:py-[72px] lg:px-24 md:p-12 pl-6 pb-6"
+      >
         <h5 class="md:mb-9 mb-6 font-semibold">{{ cardItem.title }}</h5>
         <ul class="list-disc list-inside">
           <li
@@ -40,7 +42,7 @@
         </ul>
       </div>
       <div
-        class="md-flex-[6] md:order-2 order-1 flex items-center md:p-0 pt-6 pl-6"
+        class="md:flex-[6] md:order-2 order-1 flex items-center justify-center"
       >
         <img
           :src="cardItem.img"
@@ -120,9 +122,9 @@ const itemListItems = ['message', 'ensure', 'setting'].map(value => ({
 }))
 
 const cardItem = {
-  title: get(pageText, `message_pipe.individualization.title`),
-  img: get(pageText, `message_pipe.individualization.image`),
-  desc: get(pageText, `message_pipe.individualization.descriptions`),
+  title: get(pageText, 'message_pipe.individualization.title'),
+  img: get(pageText, 'message_pipe.individualization.image'),
+  desc: get(pageText, 'message_pipe.individualization.descriptions'),
 }
 
 const selectorItems = ['quick', 'improve'].map(value => ({
