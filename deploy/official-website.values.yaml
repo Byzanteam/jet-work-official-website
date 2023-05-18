@@ -1,0 +1,16 @@
+nameOverride: hq-jet-work
+fullnameOverride: hq-jet-work-chart
+namespace: production
+
+image:
+  repository: registry.cn-hangzhou.aliyuncs.com/skylark/jet-work-official-website
+
+applicationHosts:
+  - hq.jet.work
+
+appIngressroute:
+  - name: official
+    path: /
+
+applicationTLS:
+  certResolver: jet
