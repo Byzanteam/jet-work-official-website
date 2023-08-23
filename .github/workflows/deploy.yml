@@ -1,0 +1,29 @@
+name: Deploy this application to remote host
+
+on:
+  workflow_run:
+    workflows: ["Release Docker image for the app"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: jet
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Get app info
+        id: fe-info
+        uses: byzanteam/jet-actions/fe-get-app-info@main
+        with:
+          package_file: package.json
+
+      - name: front deploy
+        uses: byzanteam/jet-actions/deploy-frontend-application@main
+        with:
+          values_file: "./deploy/official-website.values.yaml"
+          image_tag: ${{ steps.fe-info.outputs.version }}
+          release_name: ${{ steps.fe-info.outputs.name }}
+          private_key: ${{ secrets.DEPLOYMENT_RUNNER_PRIVATE_KEY }}
+          namespace: production
