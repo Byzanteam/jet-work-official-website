@@ -5,10 +5,13 @@ on:
     workflows: ["Release Docker image for the app"]
     types:
       - completed
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: jet
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -20,7 +23,7 @@ jobs:
           package_file: package.json
 
       - name: front deploy
-        uses: byzanteam/jet-actions/deploy-frontend-application@main
+        uses: byzanteam/jet-actions/deploy-application-charts@main
         with:
           values_file: "./deploy/official-website.values.yaml"
           image_tag: ${{ steps.fe-info.outputs.version }}
