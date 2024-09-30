@@ -1,7 +1,7 @@
 {
   "name": "official-website",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.1.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -44,5 +44,6 @@
     "prettier": "^2.7.1",
     "tailwindcss": "^3.2.1",
     "vite": "^3.1.0"
-  }
+  },
+  "packageManager": "pnpm@7.1.0"
 }
