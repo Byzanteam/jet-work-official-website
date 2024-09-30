@@ -23,7 +23,9 @@
               <span class="ml-2">{{ $t('page.home.public_security') }}</span>
             </div>
             <div class="text-gray-50 md:ml-2 md:mt-0 mt-2">
-              {{ $t('page.home.icp') }}
+              <a href="https://beian.miit.gov.cn/">
+                {{ $t('page.home.icp') }}
+              </a>
             </div>
           </div>
         </div>
