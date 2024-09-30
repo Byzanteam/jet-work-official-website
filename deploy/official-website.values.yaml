@@ -1,16 +1,22 @@
-nameOverride: hq-jet-work
-fullnameOverride: hq-jet-work-chart
+fullnameOverride: official-website-chart
 namespace: production
-
 image:
+  pullPolicy: IfNotPresent
   repository: registry.cn-hangzhou.aliyuncs.com/skylark/jet-work-official-website
+  tag: 0.1.0
+service:
+  ports:
+  - name: official
+    port: 80
+    protocol: TCP
 
 applicationHosts:
-  - hq.jet.work
-
-appIngressroute:
-  - name: official
-    path: /
-
+- hq.jet.work
+- jet.work
+- www.jet.work
+appIngressroutes:
+- name: official
+  path: /
+  servicePortName: official
 applicationTLS:
   certResolver: jet
