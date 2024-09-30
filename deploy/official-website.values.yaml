@@ -1,4 +1,4 @@
-fullnameOverride: official-website-chart
+fullnameOverride: hq-jet-work-chart
 namespace: production
 image:
   pullPolicy: IfNotPresent
